@@ -1,0 +1,9 @@
+{
+  "code": "999999",
+  "message": "org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: \r\n### Error querying database.  Cause: java.lang.IndexOutOfBoundsException: Index: 2, Size: 2\r\n### The error may exist in com/dcone/equipment_service/common/mapper/EquipmentTypeMapper.java (best guess)\r\n### The error may involve com.dcone.equipment_service.common.mapper.EquipmentTypeMapper.selectList\r\n### The error occurred while handling results\r\n### SQL: SELECT   type_id,type_name   FROM tb_type\r\n### Cause: java.lang.IndexOutOfBoundsException: Index: 2, Size: 2",
+  "timestamp": 1657868862118,
+  "traceId": null,
+  "extInfo": null,
+  "result": null,
+  "success": false
+}

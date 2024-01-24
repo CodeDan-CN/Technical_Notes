@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ref写法</title>
+</head>
+<body>
+    <div id = "test"></div>
+    <!-- 有顺序的引入 -->
+    <!-- react基础库 -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <!-- react基础库扩展dom库 -->
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <!-- jsx->js -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- props -->
+    <script src="https://unpkg.com/prop-types@15.6.2/prop-types.js"></script>
+<!-- 写法一
+    <script type="text/babel">
+        // 创建一个类DOM
+        class Demo extends React.Component{
+            // 编写一个ref
+            show = ()=>{
+                let input1 = this.refs.input1;
+                alert(input1.value);
+            }   
+            render(){
+                return (
+                    <div>
+                        <input ref="input1" type="text" />
+                        <button onClick={this.show}>点我查看内容</button>
+                    </div>
+                )
+            }
+
+        }
+         -->
+
+         <!-- <script type="text/babel">
+            // 创建一个类DOM
+            class Demo extends React.Component{
+                input1 = React.createRef();
+                // 编写一个ref
+                show = ()=>{
+                    let input1 = this.input1;
+                    alert(input1.current.value);
+                    console.log(input1);
+                }   
+                render(){
+                    return (
+                        <div>
+                            <input ref={this.input1} type="text" />
+                            <button onClick={this.show}>点我查看内容</button>
+                        </div>
+                    )
+                }
+    
+            } -->
+
+            
+         <script type="text/babel">
+            class Demo extends React.Component{
+  
+                // 编写一个ref
+                show = (event)=>{
+                    let input1 = event.target;
+                    alert(input1.current.value);
+                    console.log(input1);
+                }   
+                render(){
+                    return (
+                        <div>
+                            <input onBlur={this.show} type="text" />
+                        </div>
+                    )
+                }
+    
+            }
+
+
+        ReactDOM.render(<Demo />,document.getElementById('test'))
+    </script>
+</body>
+</html>

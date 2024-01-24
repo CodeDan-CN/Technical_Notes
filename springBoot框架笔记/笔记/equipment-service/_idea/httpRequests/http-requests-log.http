@@ -1,0 +1,72 @@
+GET http://localhost:9090/equipment-service/type/deleteTypeByName?typeName=人类
+
+<> 2022-07-15T165933.200.json
+
+###
+
+GET http://localhost:9090/equipment-service/type/getAllType
+
+<> 2022-07-15T165818.200.json
+
+###
+
+GET http://localhost:9090/equipment-service/type/getAllType
+
+<> 2022-07-15T164003.200.json
+
+###
+
+GET http://localhost:9090/equipment-service/type/deleteTypeById?typeId=3
+
+<> 2022-07-15T163000.200.json
+
+###
+
+GET http://localhost:9090/equipment-service/type/getTypeById?typeId=1
+
+<> 2022-07-15T162807.200.json
+
+###
+
+GET http://localhost:9090/equipment-service/type/getTypeById?typeId=1
+
+<> 2022-07-15T161427.200.json
+
+###
+
+GET http://localhost:9090/equipment-service/type/getTypeById
+
+<> 2022-07-15T160453.200.json
+
+###
+
+GET http://localhost:9090/equipment-service/type/getTypeById
+
+<> 2022-07-15T160328.404.json
+
+###
+
+GET http://localhost:9090/equipment-service/type/getAllType
+
+<> 2022-07-15T153938.200.json
+
+###
+
+GET http://localhost:9090/equipment-service/type/getAllType
+
+<> 2022-07-15T152639.200.json
+
+###
+
+GET http://localhost:9090/equipment-service/type/getAllType
+
+<> 2022-07-15T151228.200.json
+
+###
+
+GET http://localhost:9090/equipment-service/type/getAllType
+
+<> 2022-07-15T150742.200.json
+
+###
+

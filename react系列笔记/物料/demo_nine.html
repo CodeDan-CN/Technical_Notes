@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>受控组件与函数的柯里化</title>
+</head>
+<body>
+     <div id = "test"></div>
+    <!-- 有顺序的引入 -->
+    <!-- react基础库 -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <!-- react基础库扩展dom库 -->
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <!-- jsx->js -->
+    <script src="https://unpkg.com/babel-standalone@6.1.9/babel.min.js"></script>
+    <!-- props -->
+    <script src="https://unpkg.com/prop-types@15.6.2/prop-types.js"></script>
+
+    <script type="text/babel">
+
+        class Demo extends React.Component{
+
+            state = {username:'',password:''};
+
+            saveData = ()=>{
+                // 阻止表单自动提交
+                event.preventDefault()
+                // 受控组件
+                const {username,password} = this.state;
+                alert(username +"----"+ password)
+            }
+
+            //函数的柯里化，注意[],如果不参与写入state。又不需要[],不懂
+            changeData = (dataType)=>{
+                return (event)=>{
+                    this.setState({ [dataType]:event.target.value })
+                }
+            }
+
+            render(){
+                return (
+                    <div>
+                        <form onSubmit={this.saveData}>
+                            <input onChange={this.changeData('username')} type="text" name="username"/>
+                            <input onChange={this.changeData('password')} type="password" name="password"/>
+                            <button>保存</button>
+                        </form>
+                    </div>
+                )
+            }
+        }
+
+        ReactDOM.render(<Demo/>,document.getElementById('test'))
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+
+{
+java:S1488"`Immediately return this expression instead of assigning it to the temporary variable "callable".(δέΏψÿÿÿÿ
+H
+java:S1135"2Complete the task associated to this TODO comment.(άπ£Ε
+S	java:S106"9Replace this use of System.out or System.err by a logger.(»‚¤όÿÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(½ΐ·¤
+t
+java:S2142,"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(δ Ή€
+E
+java:S1128"*Remove this unused import 'java.sql.Time'.(άε»‰ώÿÿÿÿ

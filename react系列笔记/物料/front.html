@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 第一步：定义容器 -->
+    <div id = "test"></div>
+
+
+     <!-- 有顺序的引入 -->
+     <!-- react基础库 -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <!-- react基础库扩展dom库 -->
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <!-- jsx->js -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!-- jsx -->
+    <script type="text/babel">
+        // 第二步：申明虚拟dom
+        const vdom = (<h1 id = "title"><span>Hello world</span></h1>);
+        // 第三步：让ReactDOM渲染DOM
+        ReactDOM.render(vdom,document.getElementById('test'));
+    </script>
+ 
+</body>
+</html>
+ 

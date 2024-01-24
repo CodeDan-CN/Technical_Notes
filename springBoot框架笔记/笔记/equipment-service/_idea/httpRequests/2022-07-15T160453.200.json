@@ -1,0 +1,15 @@
+{
+  "code": "100000",
+  "message": "SUCCESS",
+  "timestamp": 1657872293697,
+  "traceId": null,
+  "extInfo": null,
+  "result": {
+    "typeId": null,
+    "typeName": null,
+    "typeCreateTime": null,
+    "typeUpdateTime": null,
+    "typeStatus": null
+  },
+  "success": true
+}

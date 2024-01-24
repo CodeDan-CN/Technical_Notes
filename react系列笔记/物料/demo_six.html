@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "test"></div>
+    <div id = "test1"></div>
+    <!-- 有顺序的引入 -->
+    <!-- react基础库 -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <!-- react基础库扩展dom库 -->
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <!-- jsx->js -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- props -->
+    <script src="https://unpkg.com/prop-types@15.6.2/prop-types.js"></script>
+
+
+    <script type="text/babel">
+        // 创建一个类DOM
+        class Person extends React.Component{
+
+            render(){
+                const {name,age,sex} = this.props;
+                return (
+                    <h1>{name}----{age}----{sex}</h1>
+                );
+            }
+
+        }
+        // 添加参数限制
+        Person.propTypes = {
+            name : PropTypes.string.isRequired,
+            age : PropTypes.number,
+            sex : PropTypes.string
+        }
+        // 添加参数默认限制
+        Person.defaultProps = {
+            age : 18,
+            sex : "男生"
+        }
+
+
+        ReactDOM.render(<Person name = "zld" age = {18} sex = "男生"/>, document.getElementById('test'))
+        ReactDOM.render(<Person name = "wcc" age = {20} sex = "女生"/>, document.getElementById('test1'))
+
+    </script>
+</body>
+</html>

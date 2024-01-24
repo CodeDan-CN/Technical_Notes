@@ -1,0 +1,14 @@
+
+V	java:S125"<This block of commented-out lines of code should be removed.(Ù´ÉÎùÿÿÿÿ
+f
+java:S18540"KRemove this useless assignment to local variable "defaultFullHttpResponse".(ä˜ş÷úÿÿÿÿ
+M
+java:S1854/"7Remove this useless assignment to local variable "req".(ëòì–
+O
+java:S1854.":Remove this useless assignment to local variable "facade".(ªËn
+@
+java:S1481."+Remove this unused "facade" local variable.(ªËn
+>
+java:S1481/"(Remove this unused "req" local variable.(ëòì–
+W
+java:S14810"<Remove this unused "defaultFullHttpResponse" local variable.(ä˜ş÷úÿÿÿÿ

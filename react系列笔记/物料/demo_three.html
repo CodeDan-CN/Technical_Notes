@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>类组件测试</title>
+</head>
+<body>
+    <div id = "test"></div>
+
+    <!-- 有顺序的引入 -->
+    <!-- react基础库 -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <!-- react基础库扩展dom库 -->
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <!-- jsx->js -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+
+    <script type="text/babel" >
+        // 定义类组件,继承React的Component类
+        class MyComponent extends React.Component{
+            // 编写render方法
+            render(){
+                return (
+                    <h1>Hello World</h1>
+                )
+            }
+        }
+        ReactDOM.render(<MyComponent/>, document.getElementById('test'))
+        // ReactDOM.render执行之后，React解析组件标签，找到MyCommpont标签，然后判断其是何种类型的组件，如果是类组件，那么就会new出这个类，然后将此类的
+        // render方法返回的虚拟DOM渲染成真实DOM，显示在页面上
+
+    </script>
+
+
+
+</body>
+</html>

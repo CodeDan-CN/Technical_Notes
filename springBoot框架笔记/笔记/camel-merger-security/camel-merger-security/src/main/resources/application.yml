@@ -1,0 +1,26 @@
+
+
+#camel:
+#  servlet:
+#    mapping:
+#      context-path: /camel/*
+
+camel:
+  rest:
+    context-path: /camel/*
+
+
+
+spring:
+  redis:
+    host: 123.60.151.31
+    port: 6373
+    password: redis@2023
+    database: 0
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 8
+        max-wait: -1
+        min-idle: 0
+    timeout: 5000

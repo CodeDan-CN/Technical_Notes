@@ -1,0 +1,24 @@
+{
+  "code": "100000",
+  "message": "SUCCESS",
+  "timestamp": 1657869148728,
+  "traceId": null,
+  "extInfo": null,
+  "result": [
+    {
+      "typeId": 1,
+      "typeName": "手机",
+      "typeCreateTime": null,
+      "typeUpdateTime": null,
+      "typeStatus": null
+    },
+    {
+      "typeId": 2,
+      "typeName": "电脑",
+      "typeCreateTime": null,
+      "typeUpdateTime": null,
+      "typeStatus": null
+    }
+  ],
+  "success": true
+}

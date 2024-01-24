@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>state动态改变的代码简化写法</title>
+</head>
+<body>
+    <div id = "test"></div>
+
+    <!-- 有顺序的引入 -->
+    <!-- react基础库 -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <!-- react基础库扩展dom库 -->
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <!-- jsx->js -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- props -->
+    <script src="https://unpkg.com/prop-types@16/prop-types.js"></script>
+    
+
+    <script type="text/babel">
+
+        // 定义一个类DOM(逻辑写法)
+        class MyDom extends React.Component{
+
+            state = {isHot:false};
+
+            // JS类的实例方法
+            change = () => {
+                let flag = this.state.isHot;
+                // 通过调用父类Component的setState方法去系统性的改变一个类组件的state
+                this.setState({isHot:!flag});
+            }
+            
+            render(){
+                let isHot = this.state.isHot;
+                // React规定的onclick为onClick方式，而且内部通过{方法名}的方式进行事件绑定
+                return <h1 onClick={this.change}> 你好，{isHot == true ? '夏天' : '冬天'} </h1>
+            }
+        }
+
+        ReactDOM.render(<MyDom/>,document.getElementById('test'));
+
+    </script>
+    
+</body>
+</html>

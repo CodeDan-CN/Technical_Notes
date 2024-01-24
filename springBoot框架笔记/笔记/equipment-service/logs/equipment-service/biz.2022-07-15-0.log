@@ -1,0 +1,573 @@
+2022/07/15-13:41:33.390,INFO ,equipment-service,1.0.0,,,o.h.v.i.u.Version.<clinit>,21,HV000001: Hibernate Validator 6.1.7.Final
+2022/07/15-13:41:33.402,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarting,55,Starting equipmentApplication using Java 1.8.0_202 on ZHANGLDC with PID 5632 (C:\Users\27287\local\Project\DconeProject\Demo\equipment-service\equipment-service-api\target\classes started by CodeDan in C:\Users\27287\local\Project\DconeProject\Demo\equipment-service)
+2022/07/15-13:41:33.402,INFO ,equipment-service,1.0.0,,,o.s.b.SpringApplication.logStartupProfileInfo,664,The following profiles are active: dev
+2022/07/15-13:41:34.712,WARN ,equipment-service,1.0.0,,,o.m.l.Logger.warn,44,No MyBatis mapper was found in '[com.dcone.equipment_service.common.mapper]' package. Please check your configuration.
+2022/07/15-13:41:34.796,INFO ,equipment-service,1.0.0,,,o.s.c.c.s.GenericScope.setSerializationId,283,BeanFactory id=561634d9-d125-36db-b5d1-0d89b4447c20
+2022/07/15-13:41:35.380,WARN ,equipment-service,1.0.0,,,i.u.w.j.Bootstrap.handleDeployment,68,UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022/07/15-13:41:35.398,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring embedded WebApplicationContext
+2022/07/15-13:41:35.398,INFO ,equipment-service,1.0.0,,,o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext,289,Root WebApplicationContext: initialization completed in 1925 ms
+2022/07/15-13:41:36.791,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.initialize,181,Initializing ExecutorService 'applicationTaskExecutor'
+2022/07/15-13:41:39.378,INFO ,equipment-service,1.0.0,,,o.x.Xnio.<clinit>,95,XNIO version 3.8.0.Final
+2022/07/15-13:41:39.384,INFO ,equipment-service,1.0.0,,,o.x.n.NioXnio.<clinit>,59,XNIO NIO Implementation Version 3.8.0.Final
+2022/07/15-13:41:39.414,INFO ,equipment-service,1.0.0,,,o.j.t.Version.<clinit>,52,JBoss Threads version 3.1.0.Final
+2022/07/15-13:41:39.445,INFO ,equipment-service,1.0.0,,,i.u.Undertow.start,117,starting server: Undertow - 2.2.4.Final
+2022/07/15-13:41:39.481,INFO ,equipment-service,1.0.0,,,o.s.b.w.e.u.UndertowWebServer.start,133,Undertow started on port(s) 9090 (http) with context path '/equipment-service'
+2022/07/15-13:41:39.774,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarted,61,Started equipmentApplication in 7.501 seconds (JVM running for 9.563)
+2022/07/15-13:41:39.778,INFO ,equipment-service,1.0.0,,,n.b.c.w.s.BaseWebBootstraper.run,38,
+----------------------------------------------------------
+	Service:equipment-service is running! Access URLs:
+	spring-profiles-active: 	dev
+	max-file-size: 	10MB
+	max-request-size: 	10MB
+	logging.file.max-size: 	50MB
+	logging.file.max-history: 	3
+	Local: 		http://localhost:9090/equipment-service/
+	External: 	http://10.3.74.174:9090/equipment-service/
+	Swagger-ui: http://10.3.74.174:9090/equipment-service/swagger-ui/index.html
+	Doc-ui: 	http://10.3.74.174:9090/equipment-service/doc.html
+----------------------------------------------------------
+2022/07/15-13:41:46.293,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022/07/15-13:41:46.294,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,525,Initializing Servlet 'dispatcherServlet'
+2022/07/15-13:41:46.297,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,547,Completed initialization in 3 ms
+2022/07/15-13:42:49.870,INFO ,equipment-service,1.0.0,,,i.u.Undertow.stop,252,stopping server: Undertow - 2.2.4.Final
+2022/07/15-13:42:49.875,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022/07/15-13:42:49.879,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.shutdown,218,Shutting down ExecutorService 'applicationTaskExecutor'
+2022/07/15-13:42:58.088,INFO ,equipment-service,1.0.0,,,o.h.v.i.u.Version.<clinit>,21,HV000001: Hibernate Validator 6.1.7.Final
+2022/07/15-13:42:58.098,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarting,55,Starting equipmentApplication using Java 1.8.0_202 on ZHANGLDC with PID 13056 (C:\Users\27287\local\Project\DconeProject\Demo\equipment-service\equipment-service-api\target\classes started by CodeDan in C:\Users\27287\local\Project\DconeProject\Demo\equipment-service)
+2022/07/15-13:42:58.099,INFO ,equipment-service,1.0.0,,,o.s.b.SpringApplication.logStartupProfileInfo,664,The following profiles are active: dev
+2022/07/15-13:42:59.217,WARN ,equipment-service,1.0.0,,,o.m.l.Logger.warn,44,No MyBatis mapper was found in '[com.dcone.equipment_service.common.mapper]' package. Please check your configuration.
+2022/07/15-13:42:59.286,INFO ,equipment-service,1.0.0,,,o.s.c.c.s.GenericScope.setSerializationId,283,BeanFactory id=4e85b3f2-5fe5-3743-8248-695abbd86348
+2022/07/15-13:42:59.835,WARN ,equipment-service,1.0.0,,,i.u.w.j.Bootstrap.handleDeployment,68,UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022/07/15-13:42:59.852,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring embedded WebApplicationContext
+2022/07/15-13:42:59.852,INFO ,equipment-service,1.0.0,,,o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext,289,Root WebApplicationContext: initialization completed in 1709 ms
+2022/07/15-13:43:01.066,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.initialize,181,Initializing ExecutorService 'applicationTaskExecutor'
+2022/07/15-13:43:03.069,INFO ,equipment-service,1.0.0,,,o.x.Xnio.<clinit>,95,XNIO version 3.8.0.Final
+2022/07/15-13:43:03.075,INFO ,equipment-service,1.0.0,,,o.x.n.NioXnio.<clinit>,59,XNIO NIO Implementation Version 3.8.0.Final
+2022/07/15-13:43:03.106,INFO ,equipment-service,1.0.0,,,o.j.t.Version.<clinit>,52,JBoss Threads version 3.1.0.Final
+2022/07/15-13:43:03.137,INFO ,equipment-service,1.0.0,,,i.u.Undertow.start,117,starting server: Undertow - 2.2.4.Final
+2022/07/15-13:43:03.174,INFO ,equipment-service,1.0.0,,,o.s.b.w.e.u.UndertowWebServer.start,133,Undertow started on port(s) 9090 (http) with context path '/equipment-service'
+2022/07/15-13:43:03.446,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarted,61,Started equipmentApplication in 6.107 seconds (JVM running for 7.284)
+2022/07/15-13:43:03.451,INFO ,equipment-service,1.0.0,,,n.b.c.w.s.BaseWebBootstraper.run,38,
+----------------------------------------------------------
+	Service:equipment-service is running! Access URLs:
+	spring-profiles-active: 	dev
+	max-file-size: 	10MB
+	max-request-size: 	10MB
+	logging.file.max-size: 	50MB
+	logging.file.max-history: 	3
+	Local: 		http://localhost:9090/equipment-service/
+	External: 	http://10.3.74.174:9090/equipment-service/
+	Swagger-ui: http://10.3.74.174:9090/equipment-service/swagger-ui/index.html
+	Doc-ui: 	http://10.3.74.174:9090/equipment-service/doc.html
+----------------------------------------------------------
+2022/07/15-15:03:51.666,INFO ,equipment-service,1.0.0,,,i.u.Undertow.stop,252,stopping server: Undertow - 2.2.4.Final
+2022/07/15-15:03:51.684,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.shutdown,218,Shutting down ExecutorService 'applicationTaskExecutor'
+2022/07/15-15:07:01.085,INFO ,equipment-service,1.0.0,,,o.h.v.i.u.Version.<clinit>,21,HV000001: Hibernate Validator 6.1.7.Final
+2022/07/15-15:07:01.098,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarting,55,Starting equipmentApplication using Java 1.8.0_202 on ZHANGLDC with PID 596 (C:\Users\27287\local\Project\DconeProject\Demo\equipment-service\equipment-service-api\target\classes started by CodeDan in C:\Users\27287\local\Project\DconeProject\Demo\equipment-service)
+2022/07/15-15:07:01.099,INFO ,equipment-service,1.0.0,,,o.s.b.SpringApplication.logStartupProfileInfo,664,The following profiles are active: dev
+2022/07/15-15:07:02.914,INFO ,equipment-service,1.0.0,,,o.s.c.c.s.GenericScope.setSerializationId,283,BeanFactory id=dd9e8c50-bae8-3a2f-903e-b62eebbb63cf
+2022/07/15-15:07:03.886,WARN ,equipment-service,1.0.0,,,i.u.w.j.Bootstrap.handleDeployment,68,UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022/07/15-15:07:03.918,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring embedded WebApplicationContext
+2022/07/15-15:07:03.918,INFO ,equipment-service,1.0.0,,,o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext,289,Root WebApplicationContext: initialization completed in 2743 ms
+2022/07/15-15:07:07.067,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.initialize,181,Initializing ExecutorService 'applicationTaskExecutor'
+2022/07/15-15:07:08.754,INFO ,equipment-service,1.0.0,,,o.x.Xnio.<clinit>,95,XNIO version 3.8.0.Final
+2022/07/15-15:07:08.766,INFO ,equipment-service,1.0.0,,,o.x.n.NioXnio.<clinit>,59,XNIO NIO Implementation Version 3.8.0.Final
+2022/07/15-15:07:08.814,INFO ,equipment-service,1.0.0,,,o.j.t.Version.<clinit>,52,JBoss Threads version 3.1.0.Final
+2022/07/15-15:07:08.871,INFO ,equipment-service,1.0.0,,,i.u.Undertow.start,117,starting server: Undertow - 2.2.4.Final
+2022/07/15-15:07:08.919,INFO ,equipment-service,1.0.0,,,o.s.b.w.e.u.UndertowWebServer.start,133,Undertow started on port(s) 9090 (http) with context path '/equipment-service'
+2022/07/15-15:07:09.365,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarted,61,Started equipmentApplication in 9.208 seconds (JVM running for 10.493)
+2022/07/15-15:07:09.369,INFO ,equipment-service,1.0.0,,,n.b.c.w.s.BaseWebBootstraper.run,38,
+----------------------------------------------------------
+	Service:equipment-service is running! Access URLs:
+	spring-profiles-active: 	dev
+	max-file-size: 	10MB
+	max-request-size: 	10MB
+	logging.file.max-size: 	50MB
+	logging.file.max-history: 	3
+	Local: 		http://localhost:9090/equipment-service/
+	External: 	http://10.3.74.174:9090/equipment-service/
+	Swagger-ui: http://10.3.74.174:9090/equipment-service/swagger-ui/index.html
+	Doc-ui: 	http://10.3.74.174:9090/equipment-service/doc.html
+----------------------------------------------------------
+2022/07/15-15:07:12.284,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022/07/15-15:07:12.285,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,525,Initializing Servlet 'dispatcherServlet'
+2022/07/15-15:07:12.287,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,547,Completed initialization in 2 ms
+2022/07/15-15:07:41.678,INFO ,equipment-service,1.0.0,,,c.d.e.c.s.i.EquipmentTypeServiceImpI.getAllType,30,开始获取数据
+2022/07/15-15:07:41.777,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.getConnection,110,HikariPool-1 - Starting...
+2022/07/15-15:07:41.779,WARN ,equipment-service,1.0.0,,,c.z.h.u.DriverDataSource.<init>,70,Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022/07/15-15:07:42.014,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.getConnection,123,HikariPool-1 - Start completed.
+2022/07/15-15:12:09.003,INFO ,equipment-service,1.0.0,,,i.u.Undertow.stop,252,stopping server: Undertow - 2.2.4.Final
+2022/07/15-15:12:09.008,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022/07/15-15:12:09.012,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.shutdown,218,Shutting down ExecutorService 'applicationTaskExecutor'
+2022/07/15-15:12:09.015,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.close,350,HikariPool-1 - Shutdown initiated...
+2022/07/15-15:12:09.024,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.close,352,HikariPool-1 - Shutdown completed.
+2022/07/15-15:12:15.956,INFO ,equipment-service,1.0.0,,,o.h.v.i.u.Version.<clinit>,21,HV000001: Hibernate Validator 6.1.7.Final
+2022/07/15-15:12:15.965,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarting,55,Starting equipmentApplication using Java 1.8.0_202 on ZHANGLDC with PID 2896 (C:\Users\27287\local\Project\DconeProject\Demo\equipment-service\equipment-service-api\target\classes started by CodeDan in C:\Users\27287\local\Project\DconeProject\Demo\equipment-service)
+2022/07/15-15:12:15.965,INFO ,equipment-service,1.0.0,,,o.s.b.SpringApplication.logStartupProfileInfo,664,The following profiles are active: dev
+2022/07/15-15:12:17.749,INFO ,equipment-service,1.0.0,,,o.s.c.c.s.GenericScope.setSerializationId,283,BeanFactory id=dd9e8c50-bae8-3a2f-903e-b62eebbb63cf
+2022/07/15-15:12:18.506,WARN ,equipment-service,1.0.0,,,i.u.w.j.Bootstrap.handleDeployment,68,UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022/07/15-15:12:18.533,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring embedded WebApplicationContext
+2022/07/15-15:12:18.533,INFO ,equipment-service,1.0.0,,,o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext,289,Root WebApplicationContext: initialization completed in 2488 ms
+2022/07/15-15:12:21.165,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.initialize,181,Initializing ExecutorService 'applicationTaskExecutor'
+2022/07/15-15:12:22.744,INFO ,equipment-service,1.0.0,,,o.x.Xnio.<clinit>,95,XNIO version 3.8.0.Final
+2022/07/15-15:12:22.754,INFO ,equipment-service,1.0.0,,,o.x.n.NioXnio.<clinit>,59,XNIO NIO Implementation Version 3.8.0.Final
+2022/07/15-15:12:22.797,INFO ,equipment-service,1.0.0,,,o.j.t.Version.<clinit>,52,JBoss Threads version 3.1.0.Final
+2022/07/15-15:12:22.845,INFO ,equipment-service,1.0.0,,,i.u.Undertow.start,117,starting server: Undertow - 2.2.4.Final
+2022/07/15-15:12:22.889,INFO ,equipment-service,1.0.0,,,o.s.b.w.e.u.UndertowWebServer.start,133,Undertow started on port(s) 9090 (http) with context path '/equipment-service'
+2022/07/15-15:12:23.331,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarted,61,Started equipmentApplication in 8.309 seconds (JVM running for 9.462)
+2022/07/15-15:12:23.335,INFO ,equipment-service,1.0.0,,,n.b.c.w.s.BaseWebBootstraper.run,38,
+----------------------------------------------------------
+	Service:equipment-service is running! Access URLs:
+	spring-profiles-active: 	dev
+	max-file-size: 	10MB
+	max-request-size: 	10MB
+	logging.file.max-size: 	50MB
+	logging.file.max-history: 	3
+	Local: 		http://localhost:9090/equipment-service/
+	External: 	http://10.3.74.174:9090/equipment-service/
+	Swagger-ui: http://10.3.74.174:9090/equipment-service/swagger-ui/index.html
+	Doc-ui: 	http://10.3.74.174:9090/equipment-service/doc.html
+----------------------------------------------------------
+2022/07/15-15:12:28.352,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022/07/15-15:12:28.353,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,525,Initializing Servlet 'dispatcherServlet'
+2022/07/15-15:12:28.355,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,547,Completed initialization in 2 ms
+2022/07/15-15:12:28.424,INFO ,equipment-service,1.0.0,,,c.d.e.c.s.i.EquipmentTypeServiceImpI.getAllType,30,开始获取数据
+2022/07/15-15:12:28.506,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.getConnection,110,HikariPool-1 - Starting...
+2022/07/15-15:12:28.509,WARN ,equipment-service,1.0.0,,,c.z.h.u.DriverDataSource.<init>,70,Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022/07/15-15:12:28.676,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.getConnection,123,HikariPool-1 - Start completed.
+2022/07/15-15:12:28.727,INFO ,equipment-service,1.0.0,,,c.d.e.f.EquipmentTypeFacade.getAllType,27,获取到数据
+2022/07/15-15:26:16.115,INFO ,equipment-service,1.0.0,,,i.u.Undertow.stop,252,stopping server: Undertow - 2.2.4.Final
+2022/07/15-15:26:16.122,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022/07/15-15:26:16.126,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.shutdown,218,Shutting down ExecutorService 'applicationTaskExecutor'
+2022/07/15-15:26:16.129,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.close,350,HikariPool-1 - Shutdown initiated...
+2022/07/15-15:26:16.137,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.close,352,HikariPool-1 - Shutdown completed.
+2022/07/15-15:26:25.394,INFO ,equipment-service,1.0.0,,,o.h.v.i.u.Version.<clinit>,21,HV000001: Hibernate Validator 6.1.7.Final
+2022/07/15-15:26:25.404,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarting,55,Starting equipmentApplication using Java 1.8.0_202 on ZHANGLDC with PID 4116 (C:\Users\27287\local\Project\DconeProject\Demo\equipment-service\equipment-service-api\target\classes started by CodeDan in C:\Users\27287\local\Project\DconeProject\Demo\equipment-service)
+2022/07/15-15:26:25.405,INFO ,equipment-service,1.0.0,,,o.s.b.SpringApplication.logStartupProfileInfo,664,The following profiles are active: dev
+2022/07/15-15:26:27.125,INFO ,equipment-service,1.0.0,,,o.s.c.c.s.GenericScope.setSerializationId,283,BeanFactory id=dd9e8c50-bae8-3a2f-903e-b62eebbb63cf
+2022/07/15-15:26:27.863,WARN ,equipment-service,1.0.0,,,i.u.w.j.Bootstrap.handleDeployment,68,UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022/07/15-15:26:27.891,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring embedded WebApplicationContext
+2022/07/15-15:26:27.891,INFO ,equipment-service,1.0.0,,,o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext,289,Root WebApplicationContext: initialization completed in 2413 ms
+2022/07/15-15:26:30.583,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.initialize,181,Initializing ExecutorService 'applicationTaskExecutor'
+2022/07/15-15:26:32.217,INFO ,equipment-service,1.0.0,,,o.x.Xnio.<clinit>,95,XNIO version 3.8.0.Final
+2022/07/15-15:26:32.228,INFO ,equipment-service,1.0.0,,,o.x.n.NioXnio.<clinit>,59,XNIO NIO Implementation Version 3.8.0.Final
+2022/07/15-15:26:32.271,INFO ,equipment-service,1.0.0,,,o.j.t.Version.<clinit>,52,JBoss Threads version 3.1.0.Final
+2022/07/15-15:26:32.321,INFO ,equipment-service,1.0.0,,,i.u.Undertow.start,117,starting server: Undertow - 2.2.4.Final
+2022/07/15-15:26:32.364,INFO ,equipment-service,1.0.0,,,o.s.b.w.e.u.UndertowWebServer.start,133,Undertow started on port(s) 9090 (http) with context path '/equipment-service'
+2022/07/15-15:26:32.794,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarted,61,Started equipmentApplication in 8.339 seconds (JVM running for 9.403)
+2022/07/15-15:26:32.800,INFO ,equipment-service,1.0.0,,,n.b.c.w.s.BaseWebBootstraper.run,38,
+----------------------------------------------------------
+	Service:equipment-service is running! Access URLs:
+	spring-profiles-active: 	dev
+	max-file-size: 	10MB
+	max-request-size: 	10MB
+	logging.file.max-size: 	50MB
+	logging.file.max-history: 	3
+	Local: 		http://localhost:9090/equipment-service/
+	External: 	http://10.3.74.174:9090/equipment-service/
+	Swagger-ui: http://10.3.74.174:9090/equipment-service/swagger-ui/index.html
+	Doc-ui: 	http://10.3.74.174:9090/equipment-service/doc.html
+----------------------------------------------------------
+2022/07/15-15:26:38.599,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022/07/15-15:26:38.600,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,525,Initializing Servlet 'dispatcherServlet'
+2022/07/15-15:26:38.603,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,547,Completed initialization in 3 ms
+2022/07/15-15:26:38.663,INFO ,equipment-service,1.0.0,,,c.d.e.c.s.i.EquipmentTypeServiceImpI.getAllType,30,开始获取数据
+2022/07/15-15:26:38.737,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.getConnection,110,HikariPool-1 - Starting...
+2022/07/15-15:26:38.739,WARN ,equipment-service,1.0.0,,,c.z.h.u.DriverDataSource.<init>,70,Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022/07/15-15:26:38.884,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.getConnection,123,HikariPool-1 - Start completed.
+2022/07/15-15:26:38.939,INFO ,equipment-service,1.0.0,,,c.d.e.f.EquipmentTypeFacade.getAllType,27,获取到数据
+2022/07/15-15:38:14.634,INFO ,equipment-service,1.0.0,,,i.u.Undertow.stop,252,stopping server: Undertow - 2.2.4.Final
+2022/07/15-15:38:14.639,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022/07/15-15:38:14.643,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.shutdown,218,Shutting down ExecutorService 'applicationTaskExecutor'
+2022/07/15-15:38:14.646,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.close,350,HikariPool-1 - Shutdown initiated...
+2022/07/15-15:38:14.656,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.close,352,HikariPool-1 - Shutdown completed.
+2022/07/15-15:39:22.343,INFO ,equipment-service,1.0.0,,,o.h.v.i.u.Version.<clinit>,21,HV000001: Hibernate Validator 6.1.7.Final
+2022/07/15-15:39:22.357,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarting,55,Starting equipmentApplication using Java 1.8.0_202 on ZHANGLDC with PID 3976 (C:\Users\27287\local\Project\DconeProject\Demo\equipment-service\equipment-service-api\target\classes started by CodeDan in C:\Users\27287\local\Project\DconeProject\Demo\equipment-service)
+2022/07/15-15:39:22.357,INFO ,equipment-service,1.0.0,,,o.s.b.SpringApplication.logStartupProfileInfo,664,The following profiles are active: dev
+2022/07/15-15:39:23.999,INFO ,equipment-service,1.0.0,,,o.s.c.c.s.GenericScope.setSerializationId,283,BeanFactory id=dd9e8c50-bae8-3a2f-903e-b62eebbb63cf
+2022/07/15-15:39:24.715,WARN ,equipment-service,1.0.0,,,i.u.w.j.Bootstrap.handleDeployment,68,UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022/07/15-15:39:24.743,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring embedded WebApplicationContext
+2022/07/15-15:39:24.744,INFO ,equipment-service,1.0.0,,,o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext,289,Root WebApplicationContext: initialization completed in 2312 ms
+2022/07/15-15:39:27.378,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.initialize,181,Initializing ExecutorService 'applicationTaskExecutor'
+2022/07/15-15:39:29.002,INFO ,equipment-service,1.0.0,,,o.x.Xnio.<clinit>,95,XNIO version 3.8.0.Final
+2022/07/15-15:39:29.013,INFO ,equipment-service,1.0.0,,,o.x.n.NioXnio.<clinit>,59,XNIO NIO Implementation Version 3.8.0.Final
+2022/07/15-15:39:29.058,INFO ,equipment-service,1.0.0,,,o.j.t.Version.<clinit>,52,JBoss Threads version 3.1.0.Final
+2022/07/15-15:39:29.108,INFO ,equipment-service,1.0.0,,,i.u.Undertow.start,117,starting server: Undertow - 2.2.4.Final
+2022/07/15-15:39:29.153,INFO ,equipment-service,1.0.0,,,o.s.b.w.e.u.UndertowWebServer.start,133,Undertow started on port(s) 9090 (http) with context path '/equipment-service'
+2022/07/15-15:39:29.633,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarted,61,Started equipmentApplication in 8.205 seconds (JVM running for 9.385)
+2022/07/15-15:39:29.638,INFO ,equipment-service,1.0.0,,,n.b.c.w.s.BaseWebBootstraper.run,38,
+----------------------------------------------------------
+	Service:equipment-service is running! Access URLs:
+	spring-profiles-active: 	dev
+	max-file-size: 	10MB
+	max-request-size: 	10MB
+	logging.file.max-size: 	50MB
+	logging.file.max-history: 	3
+	Local: 		http://localhost:9090/equipment-service/
+	External: 	http://10.3.74.174:9090/equipment-service/
+	Swagger-ui: http://10.3.74.174:9090/equipment-service/swagger-ui/index.html
+	Doc-ui: 	http://10.3.74.174:9090/equipment-service/doc.html
+----------------------------------------------------------
+2022/07/15-15:39:38.190,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022/07/15-15:39:38.190,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,525,Initializing Servlet 'dispatcherServlet'
+2022/07/15-15:39:38.193,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,547,Completed initialization in 3 ms
+2022/07/15-15:39:38.250,INFO ,equipment-service,1.0.0,,,c.d.e.c.s.i.EquipmentTypeServiceImpI.getAllType,34,开始获取数据
+2022/07/15-15:39:38.330,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.getConnection,110,HikariPool-1 - Starting...
+2022/07/15-15:39:38.332,WARN ,equipment-service,1.0.0,,,c.z.h.u.DriverDataSource.<init>,70,Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022/07/15-15:39:38.484,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.getConnection,123,HikariPool-1 - Start completed.
+2022/07/15-15:39:38.574,INFO ,equipment-service,1.0.0,,,c.d.e.f.EquipmentTypeFacade.getAllType,32,获取到数据
+2022/07/15-16:03:37.151,INFO ,equipment-service,1.0.0,,,i.u.Undertow.stop,252,stopping server: Undertow - 2.2.4.Final
+2022/07/15-16:03:37.160,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022/07/15-16:03:37.168,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.shutdown,218,Shutting down ExecutorService 'applicationTaskExecutor'
+2022/07/15-16:03:37.175,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.close,350,HikariPool-1 - Shutdown initiated...
+2022/07/15-16:03:37.187,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.close,352,HikariPool-1 - Shutdown completed.
+2022/07/15-16:03:53.447,INFO ,equipment-service,1.0.0,,,o.h.v.i.u.Version.<clinit>,21,HV000001: Hibernate Validator 6.1.7.Final
+2022/07/15-16:03:53.462,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarting,55,Starting equipmentApplication using Java 1.8.0_202 on ZHANGLDC with PID 11156 (C:\Users\27287\local\Project\DconeProject\Demo\equipment-service\equipment-service-api\target\classes started by CodeDan in C:\Users\27287\local\Project\DconeProject\Demo\equipment-service)
+2022/07/15-16:03:53.462,INFO ,equipment-service,1.0.0,,,o.s.b.SpringApplication.logStartupProfileInfo,664,The following profiles are active: dev
+2022/07/15-16:03:55.546,INFO ,equipment-service,1.0.0,,,o.s.c.c.s.GenericScope.setSerializationId,283,BeanFactory id=dd9e8c50-bae8-3a2f-903e-b62eebbb63cf
+2022/07/15-16:03:56.386,WARN ,equipment-service,1.0.0,,,i.u.w.j.Bootstrap.handleDeployment,68,UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022/07/15-16:03:56.416,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring embedded WebApplicationContext
+2022/07/15-16:03:56.417,INFO ,equipment-service,1.0.0,,,o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext,289,Root WebApplicationContext: initialization completed in 2874 ms
+2022/07/15-16:03:59.744,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.initialize,181,Initializing ExecutorService 'applicationTaskExecutor'
+2022/07/15-16:04:01.616,INFO ,equipment-service,1.0.0,,,o.x.Xnio.<clinit>,95,XNIO version 3.8.0.Final
+2022/07/15-16:04:01.625,INFO ,equipment-service,1.0.0,,,o.x.n.NioXnio.<clinit>,59,XNIO NIO Implementation Version 3.8.0.Final
+2022/07/15-16:04:01.673,INFO ,equipment-service,1.0.0,,,o.j.t.Version.<clinit>,52,JBoss Threads version 3.1.0.Final
+2022/07/15-16:04:01.723,INFO ,equipment-service,1.0.0,,,i.u.Undertow.start,117,starting server: Undertow - 2.2.4.Final
+2022/07/15-16:04:01.784,INFO ,equipment-service,1.0.0,,,o.s.b.w.e.u.UndertowWebServer.start,133,Undertow started on port(s) 9090 (http) with context path '/equipment-service'
+2022/07/15-16:04:02.311,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarted,61,Started equipmentApplication in 10.139 seconds (JVM running for 11.972)
+2022/07/15-16:04:02.316,INFO ,equipment-service,1.0.0,,,n.b.c.w.s.BaseWebBootstraper.run,38,
+----------------------------------------------------------
+	Service:equipment-service is running! Access URLs:
+	spring-profiles-active: 	dev
+	max-file-size: 	10MB
+	max-request-size: 	10MB
+	logging.file.max-size: 	50MB
+	logging.file.max-history: 	3
+	Local: 		http://localhost:9090/equipment-service/
+	External: 	http://10.3.74.174:9090/equipment-service/
+	Swagger-ui: http://10.3.74.174:9090/equipment-service/swagger-ui/index.html
+	Doc-ui: 	http://10.3.74.174:9090/equipment-service/doc.html
+----------------------------------------------------------
+2022/07/15-16:04:05.498,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022/07/15-16:04:05.499,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,525,Initializing Servlet 'dispatcherServlet'
+2022/07/15-16:04:05.501,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,547,Completed initialization in 2 ms
+2022/07/15-16:04:53.461,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.getConnection,110,HikariPool-1 - Starting...
+2022/07/15-16:04:53.463,WARN ,equipment-service,1.0.0,,,c.z.h.u.DriverDataSource.<init>,70,Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022/07/15-16:04:53.636,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.getConnection,123,HikariPool-1 - Start completed.
+2022/07/15-16:07:44.160,INFO ,equipment-service,1.0.0,,,i.u.Undertow.stop,252,stopping server: Undertow - 2.2.4.Final
+2022/07/15-16:07:44.165,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022/07/15-16:07:44.170,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.shutdown,218,Shutting down ExecutorService 'applicationTaskExecutor'
+2022/07/15-16:07:44.173,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.close,350,HikariPool-1 - Shutdown initiated...
+2022/07/15-16:07:44.182,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.close,352,HikariPool-1 - Shutdown completed.
+2022/07/15-16:07:54.659,INFO ,equipment-service,1.0.0,,,o.h.v.i.u.Version.<clinit>,21,HV000001: Hibernate Validator 6.1.7.Final
+2022/07/15-16:07:54.698,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarting,55,Starting equipmentApplication using Java 1.8.0_202 on ZHANGLDC with PID 20048 (C:\Users\27287\local\Project\DconeProject\Demo\equipment-service\equipment-service-api\target\classes started by CodeDan in C:\Users\27287\local\Project\DconeProject\Demo\equipment-service)
+2022/07/15-16:07:54.699,INFO ,equipment-service,1.0.0,,,o.s.b.SpringApplication.logStartupProfileInfo,664,The following profiles are active: dev
+2022/07/15-16:07:57.285,INFO ,equipment-service,1.0.0,,,o.s.c.c.s.GenericScope.setSerializationId,283,BeanFactory id=dd9e8c50-bae8-3a2f-903e-b62eebbb63cf
+2022/07/15-16:07:58.338,WARN ,equipment-service,1.0.0,,,i.u.w.j.Bootstrap.handleDeployment,68,UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022/07/15-16:07:58.368,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring embedded WebApplicationContext
+2022/07/15-16:07:58.369,INFO ,equipment-service,1.0.0,,,o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext,289,Root WebApplicationContext: initialization completed in 3566 ms
+2022/07/15-16:08:01.669,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.initialize,181,Initializing ExecutorService 'applicationTaskExecutor'
+2022/07/15-16:08:03.518,INFO ,equipment-service,1.0.0,,,o.x.Xnio.<clinit>,95,XNIO version 3.8.0.Final
+2022/07/15-16:08:03.528,INFO ,equipment-service,1.0.0,,,o.x.n.NioXnio.<clinit>,59,XNIO NIO Implementation Version 3.8.0.Final
+2022/07/15-16:08:03.572,INFO ,equipment-service,1.0.0,,,o.j.t.Version.<clinit>,52,JBoss Threads version 3.1.0.Final
+2022/07/15-16:08:03.623,INFO ,equipment-service,1.0.0,,,i.u.Undertow.start,117,starting server: Undertow - 2.2.4.Final
+2022/07/15-16:08:03.684,INFO ,equipment-service,1.0.0,,,o.s.b.w.e.u.UndertowWebServer.start,133,Undertow started on port(s) 9090 (http) with context path '/equipment-service'
+2022/07/15-16:08:04.220,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarted,61,Started equipmentApplication in 10.797 seconds (JVM running for 12.273)
+2022/07/15-16:08:04.224,INFO ,equipment-service,1.0.0,,,n.b.c.w.s.BaseWebBootstraper.run,38,
+----------------------------------------------------------
+	Service:equipment-service is running! Access URLs:
+	spring-profiles-active: 	dev
+	max-file-size: 	10MB
+	max-request-size: 	10MB
+	logging.file.max-size: 	50MB
+	logging.file.max-history: 	3
+	Local: 		http://localhost:9090/equipment-service/
+	External: 	http://10.3.74.174:9090/equipment-service/
+	Swagger-ui: http://10.3.74.174:9090/equipment-service/swagger-ui/index.html
+	Doc-ui: 	http://10.3.74.174:9090/equipment-service/doc.html
+----------------------------------------------------------
+2022/07/15-16:09:34.225,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022/07/15-16:09:34.226,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,525,Initializing Servlet 'dispatcherServlet'
+2022/07/15-16:09:34.231,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,547,Completed initialization in 5 ms
+2022/07/15-16:09:34.694,INFO ,equipment-service,1.0.0,,,c.d.e.f.EquipmentTypeFacade.getTypeById,42,查询id为：null
+2022/07/15-16:09:34.770,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.getConnection,110,HikariPool-1 - Starting...
+2022/07/15-16:09:34.774,WARN ,equipment-service,1.0.0,,,c.z.h.u.DriverDataSource.<init>,70,Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022/07/15-16:09:35.190,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.getConnection,123,HikariPool-1 - Start completed.
+2022/07/15-16:09:35.287,INFO ,equipment-service,1.0.0,,,c.d.e.f.EquipmentTypeFacade.getTypeById,44,获取到结果：null
+2022/07/15-16:10:33.304,INFO ,equipment-service,1.0.0,,,c.d.e.f.EquipmentTypeFacade.getTypeById,42,查询id为：null
+2022/07/15-16:10:33.307,INFO ,equipment-service,1.0.0,,,c.d.e.f.EquipmentTypeFacade.getTypeById,44,获取到结果：null
+2022/07/15-16:12:21.090,INFO ,equipment-service,1.0.0,,,i.u.Undertow.stop,252,stopping server: Undertow - 2.2.4.Final
+2022/07/15-16:12:21.099,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022/07/15-16:12:21.106,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.shutdown,218,Shutting down ExecutorService 'applicationTaskExecutor'
+2022/07/15-16:12:21.111,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.close,350,HikariPool-1 - Shutdown initiated...
+2022/07/15-16:12:21.122,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.close,352,HikariPool-1 - Shutdown completed.
+2022/07/15-16:12:30.196,INFO ,equipment-service,1.0.0,,,o.h.v.i.u.Version.<clinit>,21,HV000001: Hibernate Validator 6.1.7.Final
+2022/07/15-16:12:30.209,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarting,55,Starting equipmentApplication using Java 1.8.0_202 on ZHANGLDC with PID 15476 (C:\Users\27287\local\Project\DconeProject\Demo\equipment-service\equipment-service-api\target\classes started by CodeDan in C:\Users\27287\local\Project\DconeProject\Demo\equipment-service)
+2022/07/15-16:12:30.209,INFO ,equipment-service,1.0.0,,,o.s.b.SpringApplication.logStartupProfileInfo,664,The following profiles are active: dev
+2022/07/15-16:12:32.267,INFO ,equipment-service,1.0.0,,,o.s.c.c.s.GenericScope.setSerializationId,283,BeanFactory id=dd9e8c50-bae8-3a2f-903e-b62eebbb63cf
+2022/07/15-16:12:33.146,WARN ,equipment-service,1.0.0,,,i.u.w.j.Bootstrap.handleDeployment,68,UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022/07/15-16:12:33.177,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring embedded WebApplicationContext
+2022/07/15-16:12:33.177,INFO ,equipment-service,1.0.0,,,o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext,289,Root WebApplicationContext: initialization completed in 2864 ms
+2022/07/15-16:12:37.781,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.initialize,181,Initializing ExecutorService 'applicationTaskExecutor'
+2022/07/15-16:12:39.662,INFO ,equipment-service,1.0.0,,,o.x.Xnio.<clinit>,95,XNIO version 3.8.0.Final
+2022/07/15-16:12:39.673,INFO ,equipment-service,1.0.0,,,o.x.n.NioXnio.<clinit>,59,XNIO NIO Implementation Version 3.8.0.Final
+2022/07/15-16:12:39.719,INFO ,equipment-service,1.0.0,,,o.j.t.Version.<clinit>,52,JBoss Threads version 3.1.0.Final
+2022/07/15-16:12:39.774,INFO ,equipment-service,1.0.0,,,i.u.Undertow.start,117,starting server: Undertow - 2.2.4.Final
+2022/07/15-16:12:39.831,INFO ,equipment-service,1.0.0,,,o.s.b.w.e.u.UndertowWebServer.start,133,Undertow started on port(s) 9090 (http) with context path '/equipment-service'
+2022/07/15-16:12:40.315,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarted,61,Started equipmentApplication in 11.19 seconds (JVM running for 12.447)
+2022/07/15-16:12:40.319,INFO ,equipment-service,1.0.0,,,n.b.c.w.s.BaseWebBootstraper.run,38,
+----------------------------------------------------------
+	Service:equipment-service is running! Access URLs:
+	spring-profiles-active: 	dev
+	max-file-size: 	10MB
+	max-request-size: 	10MB
+	logging.file.max-size: 	50MB
+	logging.file.max-history: 	3
+	Local: 		http://localhost:9090/equipment-service/
+	External: 	http://10.3.74.174:9090/equipment-service/
+	Swagger-ui: http://10.3.74.174:9090/equipment-service/swagger-ui/index.html
+	Doc-ui: 	http://10.3.74.174:9090/equipment-service/doc.html
+----------------------------------------------------------
+2022/07/15-16:12:46.087,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022/07/15-16:12:46.087,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,525,Initializing Servlet 'dispatcherServlet'
+2022/07/15-16:12:46.089,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,547,Completed initialization in 2 ms
+2022/07/15-16:12:55.247,INFO ,equipment-service,1.0.0,,,c.d.e.c.s.i.EquipmentTypeServiceImpI.EquipmentTypeDtoToVo,50,前端传来数据:EquipmentTypeReqDto(typeId=null, typeName=null, typeCreateTime=null, typeUpdateTime=null, typeStatus=null)
+2022/07/15-16:12:55.248,INFO ,equipment-service,1.0.0,,,c.d.e.f.EquipmentTypeFacade.getTypeById,42,查询id为：null
+2022/07/15-16:12:55.290,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.getConnection,110,HikariPool-1 - Starting...
+2022/07/15-16:12:55.294,WARN ,equipment-service,1.0.0,,,c.z.h.u.DriverDataSource.<init>,70,Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022/07/15-16:12:55.430,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.getConnection,123,HikariPool-1 - Start completed.
+2022/07/15-16:12:55.479,INFO ,equipment-service,1.0.0,,,c.d.e.f.EquipmentTypeFacade.getTypeById,44,获取到结果：null
+2022/07/15-16:13:07.662,INFO ,equipment-service,1.0.0,,,c.d.e.c.s.i.EquipmentTypeServiceImpI.EquipmentTypeDtoToVo,50,前端传来数据:EquipmentTypeReqDto(typeId=null, typeName=null, typeCreateTime=null, typeUpdateTime=null, typeStatus=null)
+2022/07/15-16:13:07.663,INFO ,equipment-service,1.0.0,,,c.d.e.f.EquipmentTypeFacade.getTypeById,42,查询id为：null
+2022/07/15-16:13:07.666,INFO ,equipment-service,1.0.0,,,c.d.e.f.EquipmentTypeFacade.getTypeById,44,获取到结果：null
+2022/07/15-16:14:26.737,INFO ,equipment-service,1.0.0,,,c.d.e.c.s.i.EquipmentTypeServiceImpI.EquipmentTypeDtoToVo,50,前端传来数据:EquipmentTypeReqDto(typeId=1, typeName=null, typeCreateTime=null, typeUpdateTime=null, typeStatus=null)
+2022/07/15-16:14:26.738,INFO ,equipment-service,1.0.0,,,c.d.e.f.EquipmentTypeFacade.getTypeById,42,查询id为：1
+2022/07/15-16:14:26.749,INFO ,equipment-service,1.0.0,,,c.d.e.f.EquipmentTypeFacade.getTypeById,44,获取到结果：EquipmentTypeVo(typeId=1, typeName=手机, typeCreateTime=Fri Jul 15 19:07:32 CST 2022, typeUpdateTime=Fri Jul 15 19:07:38 CST 2022, typeStatus=0, typeDelete=0)
+2022/07/15-16:28:07.283,INFO ,equipment-service,1.0.0,,,c.d.e.c.s.i.EquipmentTypeServiceImpI.EquipmentTypeDtoToVo,50,前端传来数据:EquipmentTypeReqDto(typeId=1, typeName=null, typeCreateTime=null, typeUpdateTime=null, typeStatus=null)
+2022/07/15-16:28:07.284,INFO ,equipment-service,1.0.0,,,c.d.e.f.EquipmentTypeFacade.getTypeById,42,查询id为：1
+2022/07/15-16:28:07.286,INFO ,equipment-service,1.0.0,,,c.d.e.f.EquipmentTypeFacade.getTypeById,44,获取到结果：EquipmentTypeVo(typeId=1, typeName=手机, typeCreateTime=Fri Jul 15 19:07:32 CST 2022, typeUpdateTime=Fri Jul 15 19:07:38 CST 2022, typeStatus=0, typeDelete=0)
+2022/07/15-16:28:56.304,INFO ,equipment-service,1.0.0,,,i.u.Undertow.stop,252,stopping server: Undertow - 2.2.4.Final
+2022/07/15-16:28:56.309,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022/07/15-16:28:56.314,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.shutdown,218,Shutting down ExecutorService 'applicationTaskExecutor'
+2022/07/15-16:28:56.319,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.close,350,HikariPool-1 - Shutdown initiated...
+2022/07/15-16:28:56.326,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.close,352,HikariPool-1 - Shutdown completed.
+2022/07/15-16:29:06.818,INFO ,equipment-service,1.0.0,,,o.h.v.i.u.Version.<clinit>,21,HV000001: Hibernate Validator 6.1.7.Final
+2022/07/15-16:29:06.830,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarting,55,Starting equipmentApplication using Java 1.8.0_202 on ZHANGLDC with PID 3612 (C:\Users\27287\local\Project\DconeProject\Demo\equipment-service\equipment-service-api\target\classes started by CodeDan in C:\Users\27287\local\Project\DconeProject\Demo\equipment-service)
+2022/07/15-16:29:06.830,INFO ,equipment-service,1.0.0,,,o.s.b.SpringApplication.logStartupProfileInfo,664,The following profiles are active: dev
+2022/07/15-16:29:08.451,INFO ,equipment-service,1.0.0,,,o.s.c.c.s.GenericScope.setSerializationId,283,BeanFactory id=dd9e8c50-bae8-3a2f-903e-b62eebbb63cf
+2022/07/15-16:29:09.172,WARN ,equipment-service,1.0.0,,,i.u.w.j.Bootstrap.handleDeployment,68,UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022/07/15-16:29:09.200,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring embedded WebApplicationContext
+2022/07/15-16:29:09.200,INFO ,equipment-service,1.0.0,,,o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext,289,Root WebApplicationContext: initialization completed in 2296 ms
+2022/07/15-16:29:11.990,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.initialize,181,Initializing ExecutorService 'applicationTaskExecutor'
+2022/07/15-16:29:14.784,INFO ,equipment-service,1.0.0,,,o.x.Xnio.<clinit>,95,XNIO version 3.8.0.Final
+2022/07/15-16:29:14.798,INFO ,equipment-service,1.0.0,,,o.x.n.NioXnio.<clinit>,59,XNIO NIO Implementation Version 3.8.0.Final
+2022/07/15-16:29:14.851,INFO ,equipment-service,1.0.0,,,o.j.t.Version.<clinit>,52,JBoss Threads version 3.1.0.Final
+2022/07/15-16:29:14.925,INFO ,equipment-service,1.0.0,,,i.u.Undertow.start,117,starting server: Undertow - 2.2.4.Final
+2022/07/15-16:29:15.002,INFO ,equipment-service,1.0.0,,,o.s.b.w.e.u.UndertowWebServer.start,133,Undertow started on port(s) 9090 (http) with context path '/equipment-service'
+2022/07/15-16:29:15.816,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarted,61,Started equipmentApplication in 9.937 seconds (JVM running for 11.172)
+2022/07/15-16:29:15.827,INFO ,equipment-service,1.0.0,,,n.b.c.w.s.BaseWebBootstraper.run,38,
+----------------------------------------------------------
+	Service:equipment-service is running! Access URLs:
+	spring-profiles-active: 	dev
+	max-file-size: 	10MB
+	max-request-size: 	10MB
+	logging.file.max-size: 	50MB
+	logging.file.max-history: 	3
+	Local: 		http://localhost:9090/equipment-service/
+	External: 	http://10.3.74.174:9090/equipment-service/
+	Swagger-ui: http://10.3.74.174:9090/equipment-service/swagger-ui/index.html
+	Doc-ui: 	http://10.3.74.174:9090/equipment-service/doc.html
+----------------------------------------------------------
+2022/07/15-16:29:19.122,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022/07/15-16:29:19.122,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,525,Initializing Servlet 'dispatcherServlet'
+2022/07/15-16:29:19.125,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,547,Completed initialization in 2 ms
+2022/07/15-16:30:00.008,INFO ,equipment-service,1.0.0,,,c.d.e.c.s.i.EquipmentTypeServiceImpI.equipmentTypeDtoToVo,50,前端传来数据:EquipmentTypeReqDto(typeId=3, typeName=null, typeCreateTime=null, typeUpdateTime=null, typeStatus=null)
+2022/07/15-16:30:00.009,INFO ,equipment-service,1.0.0,,,c.d.e.f.EquipmentTypeFacade.deleteTypeById,60,查询id为：3
+2022/07/15-16:30:00.052,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.getConnection,110,HikariPool-1 - Starting...
+2022/07/15-16:30:00.058,WARN ,equipment-service,1.0.0,,,c.z.h.u.DriverDataSource.<init>,70,Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022/07/15-16:30:00.236,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.getConnection,123,HikariPool-1 - Start completed.
+2022/07/15-16:40:02.794,INFO ,equipment-service,1.0.0,,,c.d.e.c.s.i.EquipmentTypeServiceImpI.getAllType,35,开始获取数据
+2022/07/15-16:40:02.886,INFO ,equipment-service,1.0.0,,,c.d.e.f.EquipmentTypeFacade.getAllType,35,获取到数据
+2022/07/15-16:58:18.476,INFO ,equipment-service,1.0.0,,,c.d.e.c.s.i.EquipmentTypeServiceImpI.getAllType,35,开始获取数据
+2022/07/15-16:58:18.480,INFO ,equipment-service,1.0.0,,,c.d.e.f.EquipmentTypeFacade.getAllType,35,获取到数据
+2022/07/15-16:58:26.741,INFO ,equipment-service,1.0.0,,,i.u.Undertow.stop,252,stopping server: Undertow - 2.2.4.Final
+2022/07/15-16:58:26.748,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022/07/15-16:58:26.754,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.shutdown,218,Shutting down ExecutorService 'applicationTaskExecutor'
+2022/07/15-16:58:26.759,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.close,350,HikariPool-1 - Shutdown initiated...
+2022/07/15-16:58:26.773,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.close,352,HikariPool-1 - Shutdown completed.
+2022/07/15-16:58:37.612,INFO ,equipment-service,1.0.0,,,o.h.v.i.u.Version.<clinit>,21,HV000001: Hibernate Validator 6.1.7.Final
+2022/07/15-16:58:37.627,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarting,55,Starting equipmentApplication using Java 1.8.0_202 on ZHANGLDC with PID 4128 (C:\Users\27287\local\Project\DconeProject\Demo\equipment-service\equipment-service-api\target\classes started by CodeDan in C:\Users\27287\local\Project\DconeProject\Demo\equipment-service)
+2022/07/15-16:58:37.628,INFO ,equipment-service,1.0.0,,,o.s.b.SpringApplication.logStartupProfileInfo,664,The following profiles are active: dev
+2022/07/15-16:58:39.758,INFO ,equipment-service,1.0.0,,,o.s.c.c.s.GenericScope.setSerializationId,283,BeanFactory id=dd9e8c50-bae8-3a2f-903e-b62eebbb63cf
+2022/07/15-16:58:40.736,WARN ,equipment-service,1.0.0,,,i.u.w.j.Bootstrap.handleDeployment,68,UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022/07/15-16:58:40.777,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring embedded WebApplicationContext
+2022/07/15-16:58:40.778,INFO ,equipment-service,1.0.0,,,o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext,289,Root WebApplicationContext: initialization completed in 3039 ms
+2022/07/15-16:58:44.605,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.initialize,181,Initializing ExecutorService 'applicationTaskExecutor'
+2022/07/15-16:58:46.531,INFO ,equipment-service,1.0.0,,,o.x.Xnio.<clinit>,95,XNIO version 3.8.0.Final
+2022/07/15-16:58:46.542,INFO ,equipment-service,1.0.0,,,o.x.n.NioXnio.<clinit>,59,XNIO NIO Implementation Version 3.8.0.Final
+2022/07/15-16:58:46.593,INFO ,equipment-service,1.0.0,,,o.j.t.Version.<clinit>,52,JBoss Threads version 3.1.0.Final
+2022/07/15-16:58:46.671,INFO ,equipment-service,1.0.0,,,i.u.Undertow.start,117,starting server: Undertow - 2.2.4.Final
+2022/07/15-16:58:46.725,INFO ,equipment-service,1.0.0,,,o.s.b.w.e.u.UndertowWebServer.start,133,Undertow started on port(s) 9090 (http) with context path '/equipment-service'
+2022/07/15-16:58:47.298,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarted,61,Started equipmentApplication in 10.844 seconds (JVM running for 12.278)
+2022/07/15-16:58:47.306,INFO ,equipment-service,1.0.0,,,n.b.c.w.s.BaseWebBootstraper.run,38,
+----------------------------------------------------------
+	Service:equipment-service is running! Access URLs:
+	spring-profiles-active: 	dev
+	max-file-size: 	10MB
+	max-request-size: 	10MB
+	logging.file.max-size: 	50MB
+	logging.file.max-history: 	3
+	Local: 		http://localhost:9090/equipment-service/
+	External: 	http://10.3.74.174:9090/equipment-service/
+	Swagger-ui: http://10.3.74.174:9090/equipment-service/swagger-ui/index.html
+	Doc-ui: 	http://10.3.74.174:9090/equipment-service/doc.html
+----------------------------------------------------------
+2022/07/15-16:58:49.457,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022/07/15-16:58:49.458,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,525,Initializing Servlet 'dispatcherServlet'
+2022/07/15-16:58:49.461,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,547,Completed initialization in 3 ms
+2022/07/15-16:59:33.396,INFO ,equipment-service,1.0.0,,,c.d.e.c.s.i.EquipmentTypeServiceImpI.equipmentTypeDtoToVo,50,前端传来数据:EquipmentTypeReqDto(typeId=null, typeName=人类, typeCreateTime=null, typeUpdateTime=null, typeStatus=null)
+2022/07/15-16:59:33.397,INFO ,equipment-service,1.0.0,,,c.d.e.f.EquipmentTypeFacade.deleteTypeByName,75,删除name为：人类
+2022/07/15-16:59:33.496,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.getConnection,110,HikariPool-1 - Starting...
+2022/07/15-16:59:33.499,WARN ,equipment-service,1.0.0,,,c.z.h.u.DriverDataSource.<init>,70,Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022/07/15-16:59:33.719,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.getConnection,123,HikariPool-1 - Start completed.
+2022/07/15-17:07:25.156,INFO ,equipment-service,1.0.0,,,i.u.Undertow.stop,252,stopping server: Undertow - 2.2.4.Final
+2022/07/15-17:07:25.163,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022/07/15-17:07:25.167,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.shutdown,218,Shutting down ExecutorService 'applicationTaskExecutor'
+2022/07/15-17:07:25.170,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.close,350,HikariPool-1 - Shutdown initiated...
+2022/07/15-17:07:25.180,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.close,352,HikariPool-1 - Shutdown completed.
+2022/07/15-17:07:34.277,INFO ,equipment-service,1.0.0,,,o.h.v.i.u.Version.<clinit>,21,HV000001: Hibernate Validator 6.1.7.Final
+2022/07/15-17:07:34.290,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarting,55,Starting equipmentApplication using Java 1.8.0_202 on ZHANGLDC with PID 17140 (C:\Users\27287\local\Project\DconeProject\Demo\equipment-service\equipment-service-api\target\classes started by CodeDan in C:\Users\27287\local\Project\DconeProject\Demo\equipment-service)
+2022/07/15-17:07:34.291,INFO ,equipment-service,1.0.0,,,o.s.b.SpringApplication.logStartupProfileInfo,664,The following profiles are active: dev
+2022/07/15-17:07:35.998,INFO ,equipment-service,1.0.0,,,o.s.c.c.s.GenericScope.setSerializationId,283,BeanFactory id=dd9e8c50-bae8-3a2f-903e-b62eebbb63cf
+2022/07/15-17:07:36.770,WARN ,equipment-service,1.0.0,,,i.u.w.j.Bootstrap.handleDeployment,68,UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022/07/15-17:07:36.799,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring embedded WebApplicationContext
+2022/07/15-17:07:36.800,INFO ,equipment-service,1.0.0,,,o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext,289,Root WebApplicationContext: initialization completed in 2436 ms
+2022/07/15-17:07:41.587,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.initialize,181,Initializing ExecutorService 'applicationTaskExecutor'
+2022/07/15-17:07:43.643,INFO ,equipment-service,1.0.0,,,o.x.Xnio.<clinit>,95,XNIO version 3.8.0.Final
+2022/07/15-17:07:43.652,INFO ,equipment-service,1.0.0,,,o.x.n.NioXnio.<clinit>,59,XNIO NIO Implementation Version 3.8.0.Final
+2022/07/15-17:07:43.702,INFO ,equipment-service,1.0.0,,,o.j.t.Version.<clinit>,52,JBoss Threads version 3.1.0.Final
+2022/07/15-17:07:43.775,INFO ,equipment-service,1.0.0,,,i.u.Undertow.start,117,starting server: Undertow - 2.2.4.Final
+2022/07/15-17:07:43.822,INFO ,equipment-service,1.0.0,,,o.s.b.w.e.u.UndertowWebServer.start,133,Undertow started on port(s) 9090 (http) with context path '/equipment-service'
+2022/07/15-17:07:44.264,WARN ,equipment-service,1.0.0,,,s.d.s.w.r.p.ParameterTypeReader.findParameterType,112,@ModelAttribute annotated parameters should have already been expanded via the ExpandedParameterBuilderPlugin
+2022/07/15-17:07:44.340,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarted,61,Started equipmentApplication in 10.973 seconds (JVM running for 12.005)
+2022/07/15-17:07:44.348,INFO ,equipment-service,1.0.0,,,n.b.c.w.s.BaseWebBootstraper.run,38,
+----------------------------------------------------------
+	Service:equipment-service is running! Access URLs:
+	spring-profiles-active: 	dev
+	max-file-size: 	10MB
+	max-request-size: 	10MB
+	logging.file.max-size: 	50MB
+	logging.file.max-history: 	3
+	Local: 		http://localhost:9090/equipment-service/
+	External: 	http://10.3.74.174:9090/equipment-service/
+	Swagger-ui: http://10.3.74.174:9090/equipment-service/swagger-ui/index.html
+	Doc-ui: 	http://10.3.74.174:9090/equipment-service/doc.html
+----------------------------------------------------------
+2022/07/15-17:10:06.834,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022/07/15-17:10:06.834,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,525,Initializing Servlet 'dispatcherServlet'
+2022/07/15-17:10:06.837,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,547,Completed initialization in 2 ms
+2022/07/15-17:10:06.991,INFO ,equipment-service,1.0.0,,,c.d.e.c.s.i.EquipmentTypeServiceImpI.equipmentTypeDtoToVo,50,前端传来数据:EquipmentTypeReqDto(typeId=1, typeName=null, typeCreateTime=null, typeUpdateTime=null, typeStatus=null)
+2022/07/15-17:10:06.992,INFO ,equipment-service,1.0.0,,,c.d.e.f.EquipmentTypeFacade.getTypeById,47,查询id为：1
+2022/07/15-17:10:07.025,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.getConnection,110,HikariPool-1 - Starting...
+2022/07/15-17:10:07.028,WARN ,equipment-service,1.0.0,,,c.z.h.u.DriverDataSource.<init>,70,Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022/07/15-17:10:07.170,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.getConnection,123,HikariPool-1 - Start completed.
+2022/07/15-17:10:07.235,INFO ,equipment-service,1.0.0,,,c.d.e.f.EquipmentTypeFacade.getTypeById,49,获取到结果：EquipmentTypeVo(typeId=1, typeName=手机, typeCreateTime=Fri Jul 15 19:07:32 CST 2022, typeUpdateTime=Fri Jul 15 19:07:38 CST 2022, typeStatus=0, typeDelete=0)
+2022/07/15-17:20:02.403,INFO ,equipment-service,1.0.0,,,i.u.Undertow.stop,252,stopping server: Undertow - 2.2.4.Final
+2022/07/15-17:20:02.408,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022/07/15-17:20:02.412,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.shutdown,218,Shutting down ExecutorService 'applicationTaskExecutor'
+2022/07/15-17:20:02.416,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.close,350,HikariPool-1 - Shutdown initiated...
+2022/07/15-17:20:02.432,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.close,352,HikariPool-1 - Shutdown completed.
+2022/07/15-17:20:09.596,INFO ,equipment-service,1.0.0,,,o.h.v.i.u.Version.<clinit>,21,HV000001: Hibernate Validator 6.1.7.Final
+2022/07/15-17:20:09.609,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarting,55,Starting equipmentApplication using Java 1.8.0_202 on ZHANGLDC with PID 15664 (C:\Users\27287\local\Project\DconeProject\Demo\equipment-service\equipment-service-api\target\classes started by CodeDan in C:\Users\27287\local\Project\DconeProject\Demo\equipment-service)
+2022/07/15-17:20:09.609,INFO ,equipment-service,1.0.0,,,o.s.b.SpringApplication.logStartupProfileInfo,664,The following profiles are active: dev
+2022/07/15-17:20:11.232,INFO ,equipment-service,1.0.0,,,o.s.c.c.s.GenericScope.setSerializationId,283,BeanFactory id=dd9e8c50-bae8-3a2f-903e-b62eebbb63cf
+2022/07/15-17:20:11.946,WARN ,equipment-service,1.0.0,,,i.u.w.j.Bootstrap.handleDeployment,68,UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022/07/15-17:20:11.973,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring embedded WebApplicationContext
+2022/07/15-17:20:11.973,INFO ,equipment-service,1.0.0,,,o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext,289,Root WebApplicationContext: initialization completed in 2296 ms
+2022/07/15-17:20:14.624,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.initialize,181,Initializing ExecutorService 'applicationTaskExecutor'
+2022/07/15-17:20:16.240,INFO ,equipment-service,1.0.0,,,o.x.Xnio.<clinit>,95,XNIO version 3.8.0.Final
+2022/07/15-17:20:16.250,INFO ,equipment-service,1.0.0,,,o.x.n.NioXnio.<clinit>,59,XNIO NIO Implementation Version 3.8.0.Final
+2022/07/15-17:20:16.293,INFO ,equipment-service,1.0.0,,,o.j.t.Version.<clinit>,52,JBoss Threads version 3.1.0.Final
+2022/07/15-17:20:16.343,INFO ,equipment-service,1.0.0,,,i.u.Undertow.start,117,starting server: Undertow - 2.2.4.Final
+2022/07/15-17:20:16.387,INFO ,equipment-service,1.0.0,,,o.s.b.w.e.u.UndertowWebServer.start,133,Undertow started on port(s) 9090 (http) with context path '/equipment-service'
+2022/07/15-17:20:16.871,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarted,61,Started equipmentApplication in 8.197 seconds (JVM running for 9.137)
+2022/07/15-17:20:16.876,INFO ,equipment-service,1.0.0,,,n.b.c.w.s.BaseWebBootstraper.run,38,
+----------------------------------------------------------
+	Service:equipment-service is running! Access URLs:
+	spring-profiles-active: 	dev
+	max-file-size: 	10MB
+	max-request-size: 	10MB
+	logging.file.max-size: 	50MB
+	logging.file.max-history: 	3
+	Local: 		http://localhost:9090/equipment-service/
+	External: 	http://10.3.74.174:9090/equipment-service/
+	Swagger-ui: http://10.3.74.174:9090/equipment-service/swagger-ui/index.html
+	Doc-ui: 	http://10.3.74.174:9090/equipment-service/doc.html
+----------------------------------------------------------
+2022/07/15-17:20:22.352,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022/07/15-17:20:22.353,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,525,Initializing Servlet 'dispatcherServlet'
+2022/07/15-17:20:22.357,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,547,Completed initialization in 4 ms
+2022/07/15-17:48:27.913,INFO ,equipment-service,1.0.0,,,i.u.Undertow.stop,252,stopping server: Undertow - 2.2.4.Final
+2022/07/15-17:48:27.918,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022/07/15-17:48:27.922,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.shutdown,218,Shutting down ExecutorService 'applicationTaskExecutor'
+2022/07/15-17:48:42.294,INFO ,equipment-service,1.0.0,,,o.h.v.i.u.Version.<clinit>,21,HV000001: Hibernate Validator 6.1.7.Final
+2022/07/15-17:48:42.306,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarting,55,Starting equipmentApplication using Java 1.8.0_202 on ZHANGLDC with PID 4156 (C:\Users\27287\local\Project\DconeProject\Demo\equipment-service\equipment-service-api\target\classes started by CodeDan in C:\Users\27287\local\Project\DconeProject\Demo\equipment-service)
+2022/07/15-17:48:42.306,INFO ,equipment-service,1.0.0,,,o.s.b.SpringApplication.logStartupProfileInfo,664,The following profiles are active: dev
+2022/07/15-17:48:43.978,INFO ,equipment-service,1.0.0,,,o.s.c.c.s.GenericScope.setSerializationId,283,BeanFactory id=dd9e8c50-bae8-3a2f-903e-b62eebbb63cf
+2022/07/15-17:48:44.727,WARN ,equipment-service,1.0.0,,,i.u.w.j.Bootstrap.handleDeployment,68,UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022/07/15-17:48:44.759,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring embedded WebApplicationContext
+2022/07/15-17:48:44.760,INFO ,equipment-service,1.0.0,,,o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext,289,Root WebApplicationContext: initialization completed in 2388 ms
+2022/07/15-17:48:47.533,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.initialize,181,Initializing ExecutorService 'applicationTaskExecutor'
+2022/07/15-17:48:49.159,INFO ,equipment-service,1.0.0,,,o.x.Xnio.<clinit>,95,XNIO version 3.8.0.Final
+2022/07/15-17:48:49.170,INFO ,equipment-service,1.0.0,,,o.x.n.NioXnio.<clinit>,59,XNIO NIO Implementation Version 3.8.0.Final
+2022/07/15-17:48:49.218,INFO ,equipment-service,1.0.0,,,o.j.t.Version.<clinit>,52,JBoss Threads version 3.1.0.Final
+2022/07/15-17:48:49.270,INFO ,equipment-service,1.0.0,,,i.u.Undertow.start,117,starting server: Undertow - 2.2.4.Final
+2022/07/15-17:48:49.316,INFO ,equipment-service,1.0.0,,,o.s.b.w.e.u.UndertowWebServer.start,133,Undertow started on port(s) 9090 (http) with context path '/equipment-service'
+2022/07/15-17:48:49.827,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarted,61,Started equipmentApplication in 8.545 seconds (JVM running for 9.461)
+2022/07/15-17:48:49.832,INFO ,equipment-service,1.0.0,,,n.b.c.w.s.BaseWebBootstraper.run,38,
+----------------------------------------------------------
+	Service:equipment-service is running! Access URLs:
+	spring-profiles-active: 	dev
+	max-file-size: 	10MB
+	max-request-size: 	10MB
+	logging.file.max-size: 	50MB
+	logging.file.max-history: 	3
+	Local: 		http://localhost:9090/equipment-service/
+	External: 	http://10.3.74.174:9090/equipment-service/
+	Swagger-ui: http://10.3.74.174:9090/equipment-service/swagger-ui/index.html
+	Doc-ui: 	http://10.3.74.174:9090/equipment-service/doc.html
+----------------------------------------------------------
+2022/07/15-17:49:03.443,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022/07/15-17:49:03.443,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,525,Initializing Servlet 'dispatcherServlet'
+2022/07/15-17:49:03.446,INFO ,equipment-service,1.0.0,,,o.s.w.s.FrameworkServlet.initServletBean,547,Completed initialization in 2 ms
+2022/07/15-17:49:43.171,INFO ,equipment-service,1.0.0,,,c.d.e.c.s.i.EquipmentTypeServiceImpI.equipmentTybeDtoToVoList,62,前端传来数据:[EquipmentTypeReqDto(typeId=3, typeName=null, typeCreateTime=null, typeUpdateTime=null, typeStatus=null), EquipmentTypeReqDto(typeId=4, typeName=null, typeCreateTime=null, typeUpdateTime=null, typeStatus=null)]
+2022/07/15-17:49:43.249,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.getConnection,110,HikariPool-1 - Starting...
+2022/07/15-17:49:43.252,WARN ,equipment-service,1.0.0,,,c.z.h.u.DriverDataSource.<init>,70,Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022/07/15-17:49:43.393,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.getConnection,123,HikariPool-1 - Start completed.
+2022/07/15-17:50:56.012,INFO ,equipment-service,1.0.0,,,i.u.Undertow.stop,252,stopping server: Undertow - 2.2.4.Final
+2022/07/15-17:50:56.016,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022/07/15-17:50:56.020,INFO ,equipment-service,1.0.0,,,o.s.s.c.ExecutorConfigurationSupport.shutdown,218,Shutting down ExecutorService 'applicationTaskExecutor'
+2022/07/15-17:50:56.023,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.close,350,HikariPool-1 - Shutdown initiated...
+2022/07/15-17:50:56.032,INFO ,equipment-service,1.0.0,,,c.z.h.HikariDataSource.close,352,HikariPool-1 - Shutdown completed.
+2022/07/15-17:51:06.864,INFO ,equipment-service,1.0.0,,,o.h.v.i.u.Version.<clinit>,21,HV000001: Hibernate Validator 6.1.7.Final
+2022/07/15-17:51:06.876,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarting,55,Starting equipmentApplication using Java 1.8.0_202 on ZHANGLDC with PID 4532 (C:\Users\27287\local\Project\DconeProject\Demo\equipment-service\equipment-service-api\target\classes started by CodeDan in C:\Users\27287\local\Project\DconeProject\Demo\equipment-service)
+2022/07/15-17:51:06.877,INFO ,equipment-service,1.0.0,,,o.s.b.SpringApplication.logStartupProfileInfo,664,The following profiles are active: dev
+2022/07/15-17:51:08.518,INFO ,equipment-service,1.0.0,,,o.s.c.c.s.GenericScope.setSerializationId,283,BeanFactory id=dd9e8c50-bae8-3a2f-903e-b62eebbb63cf
+2022/07/15-17:51:09.222,WARN ,equipment-service,1.0.0,,,i.u.w.j.Bootstrap.handleDeployment,68,UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022/07/15-17:51:09.249,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring embedded WebApplicationContext
+2022/07/15-17:51:09.250,INFO ,equipment-service,1.0.0,,,o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext,289,Root WebApplicationContext: initialization completed in 2292 ms
+2022/07/15-17:51:10.334,WARN ,equipment-service,1.0.0,,,o.s.c.s.AbstractApplicationContext.refresh,590,Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'equipmentTypeController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'equipmentTypeFacade': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'equipmentTypeServiceImpI': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'equipmentTypeMapper' defined in file [C:\Users\27287\local\Project\DconeProject\Demo\equipment-service\equipment-service-common\target\classes\com\dcone\equipment_service\common\mapper\EquipmentTypeMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: @TableLogic not support more than one in Class: "com.dcone.equipment_service.common.model.vo.EquipmentTypeVo"
+2022/07/15-17:51:10.345,INFO ,equipment-service,1.0.0,,,o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage,136,
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022/07/15-18:01:51.352,INFO ,equipment-service,1.0.0,,,o.h.v.i.u.Version.<clinit>,21,HV000001: Hibernate Validator 6.1.7.Final
+2022/07/15-18:01:51.362,INFO ,equipment-service,1.0.0,,,o.s.b.StartupInfoLogger.logStarting,55,Starting equipmentApplication using Java 1.8.0_202 on ZHANGLDC with PID 10212 (C:\Users\27287\local\Project\DconeProject\Demo\equipment-service\equipment-service-api\target\classes started by CodeDan in C:\Users\27287\local\Project\DconeProject\Demo\equipment-service)
+2022/07/15-18:01:51.363,INFO ,equipment-service,1.0.0,,,o.s.b.SpringApplication.logStartupProfileInfo,664,The following profiles are active: dev
+2022/07/15-18:01:52.978,INFO ,equipment-service,1.0.0,,,o.s.c.c.s.GenericScope.setSerializationId,283,BeanFactory id=dd9e8c50-bae8-3a2f-903e-b62eebbb63cf
+2022/07/15-18:01:53.688,WARN ,equipment-service,1.0.0,,,i.u.w.j.Bootstrap.handleDeployment,68,UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022/07/15-18:01:53.716,INFO ,equipment-service,1.0.0,,,i.u.s.s.ServletContextImpl.log,371,Initializing Spring embedded WebApplicationContext
+2022/07/15-18:01:53.716,INFO ,equipment-service,1.0.0,,,o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext,289,Root WebApplicationContext: initialization completed in 2288 ms
+2022/07/15-18:01:54.755,WARN ,equipment-service,1.0.0,,,o.s.c.s.AbstractApplicationContext.refresh,590,Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'equipmentTypeController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'equipmentTypeFacade': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'equipmentTypeServiceImpI': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'equipmentTypeMapper' defined in file [C:\Users\27287\local\Project\DconeProject\Demo\equipment-service\equipment-service-common\target\classes\com\dcone\equipment_service\common\mapper\EquipmentTypeMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: @TableLogic not support more than one in Class: "com.dcone.equipment_service.common.model.vo.EquipmentTypeVo"
+2022/07/15-18:01:54.766,INFO ,equipment-service,1.0.0,,,o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage,136,
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.

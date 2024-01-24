@@ -1,0 +1,303 @@
+### snowFlake数仓搭建记录
+
+### ODS层构建
+
+假设提供的BI为数据源，那就是每天定时拉取的更新数据，所以需要从BI三个数据源中提取出ODS层数据，表字段相同，用于**数据追溯**。
+
+**前置条件：创建和BI相同字段的ODS实体表**
+
+```sql
+create or replace TABLE DATA_ZHANGLDC.PUBLIC.ODS_AEG_WLCGRK (
+	CGDDDM VARCHAR(30) COMMENT '采购订单代码',
+	BWBJE NUMBER(15,2) COMMENT '人民币金额',
+	JDBZ VARCHAR(12),
+	WLDM VARCHAR(54) COMMENT '物料代码',
+	GCDM VARCHAR(12) COMMENT '工厂代码',
+	KCDDM VARCHAR(12) COMMENT '库存地代码',
+	HBDM VARCHAR(12),
+	YWFWDM VARCHAR(12) COMMENT '业务范围代码',
+	LRZXDM VARCHAR(30),
+	GYSDM VARCHAR(54) COMMENT '供应商代码',
+	GSDM VARCHAR(12),
+	CGLXDM VARCHAR(30),
+	PZJZRQ VARCHAR(30) ,
+	PZCJRQ VARCHAR(30),COMMENT '凭证记账日期'
+	CGZZDM VARCHAR(30),
+	CGZDM VARCHAR(30),
+	SL NUMBER(15,3),
+	CGDHXM NUMBER(38,0),
+	XQGZH VARCHAR(54),
+	ZT VARCHAR(30) COMMENT '状态：入库, 未清',
+	DDQRH VARCHAR(60),
+	YJDHRQ VARCHAR(30),
+	GC_KCD VARCHAR(30),
+	ZTSL NUMBER(15,3),
+	WFHSL NUMBER(15,3),
+	PCDM VARCHAR(30),
+	HBYWFWDM VARCHAR(50),
+	FKTK VARCHAR(30),
+	ZRXSY VARCHAR(60),
+	KHDM VARCHAR(30),
+	CPXID VARCHAR(69),
+	SM VARCHAR(6),
+	GSHBJE NUMBER(15,2),
+	GSHBDM VARCHAR(12),
+	XSDDM VARCHAR(30),
+	XSDHXM VARCHAR(6),
+	PGLX VARCHAR(30),
+	CGPZHBJE NUMBER(15,3),
+	NDCK VARCHAR(50),
+	CGDDCJRY VARCHAR(50),
+	HZH VARCHAR(50),
+	CGDBZ VARCHAR(10),
+	FLAG VARCHAR(10),
+	PLAN VARCHAR(10),
+	DH VARCHAR(100),
+	CGDDDM_HXM VARCHAR(100),
+	DYNADH VARCHAR(100),
+	NBDDDM VARCHAR(100),
+	WLPZND VARCHAR(100),
+	WLPZDM VARCHAR(100),
+	WLPZHXMH VARCDATA_ZHANGLDC.PUBLICHAR(100),
+	ZCKCDDM VARCHAR(12),
+	ZWPP VARCHAR(600)
+);
+
+create or replace TABLE DATA_ZHANGLDC.PUBLIC.ODS_MB_RQ (
+	MONTH FLOAT COMMENT '月',
+	YEAR FLOAT COMMENT '年',
+	QUARTER FLOAT COMMENT '季度',
+	WEEKDAY_NUMBER FLOAT COMMENT '周天',
+	DAY_OF_MONTH FLOAT COMMENT '月天',
+	IS_WEEKDAY FLOAT COMMENT '是否工作日',
+	IS_WEEKEND FLOAT COMMENT '是否周日',
+	MONTH_NAME VARCHAR(30) COMMENT '月份名称',
+	WEEK_OF_YEAR FLOAT COMMENT '年周',
+	WEEKDAY_NAME VARCHAR(30) COMMENT '星期名称',
+	DAY_OF_YEAR FLOAT COMMENT '年天',
+	DAY DATE COMMENT '日期',
+	TEXT_DAY VARCHAR(30) NOT NULL COMMENT '日期文本：yyyymmdd',
+	YEAR_MONTH VARCHAR(30) COMMENT '年月',
+	MONTH_WORKDAYS FLOAT COMMENT '月工作日天数',
+	WEEK_OF_MONTH FLOAT COMMENT '第几周：周日算每周第一天',
+	IS_MONTHLASTDAY FLOAT COMMENT '是否每月最后一天',
+	primary key (TEXT_DAY)
+);
+
+create or replace TABLE DATA_ZHANGLDC.PUBLIC.ODS_MB_YWFW (
+	BBQZDM VARCHAR(30),
+	BBQZMC VARCHAR(180),
+	SYBBDM VARCHAR(30),
+	SYBBMC VARCHAR(120),
+	SYBDM VARCHAR(30) COMMENT '事业部代码',
+	SYBMC VARCHAR(120) COMMENT '事业部名称',
+	YWFWDM VARCHAR(12) NOT NULL COMMENT '业务范围代码',
+	YWFWMC VARCHAR(120) COMMENT '业务范围名称',
+	CPZDM VARCHAR(6),
+	YWKMC VARCHAR(120),
+	JTMC VARCHAR(120),
+	JTFL VARCHAR(30),
+	DKMLL FLOAT,
+	YWFWQC VARCHAR(300),
+	YWFL VARCHAR(300),
+	ZLBBMC VARCHAR(120),
+	YWFLDM VARCHAR(100),
+	BUMC VARCHAR(100) COMMENT '本部名称',
+	BUDM VARCHAR(300) COMMENT '本部代码',
+	SBUMC VARCHAR(100),
+	SBUDM VARCHAR(300),
+	FLAG VARCHAR(10) NOT NULL,
+	BGMC VARCHAR(120) COMMENT 'BG名称',
+	BGDM VARCHAR(120) COMMENT 'BG代码',
+	YWKDM VARCHAR(50),
+	JTFLN VARCHAR(50),
+	primary key (YWFWDM)
+);
+```
+
+
+
+```sql
+// 创建三个task 每小时拉取数据，并使用暂存视图进行是否有新数据的校验，如果存在则插入到表中（这里采用删除之后全量拉取）
+// 构建ODS_AEG_WLCGRK
+CREATE OR REPLACE TASK BUILD_ODS_AEG_WLCGRK
+WAREHOUSE=SF_TUTS_WH
+SCHEDULE= '60 minute'
+AS
+BEGIN
+TRUNCATE ODS_AEG_WLCGRK;
+INSERT INTO ODS_AEG_WLCGRK ( SELECT CGDDDM,BWBJE,JDBZ,WLDM,GCDM,KCDDM,HBDM,YWFWDM,LRZXDM,GYSDM,GSDM,CGLXDM,PZJZRQ,PZCJRQ,CGZZDM,CGZDM,SL,CGDHXM,XQGZH,ZT,DDQRH,YJDHRQ,GC_KCD,ZTSL,WFHSL,PCDM,HBYWFWDM,FKTK,ZRXSY,KHDM,CPXID,SM,GSHBJE,GSHBDM,XSDDM,XSDHXM,PGLX,CGPZHBJE,NDCK,CGDDCJRY,HZH,CGDBZ,FLAG,PLAN,DH,CGDDDM_HXM,DYNADH,NBDDDM,WLPZND,WLPZDM,WLPZHXMH,ZCKCDDM,ZWPP from SF_TUTS.PUBLIC.BI_AEG_WLCGRK );
+END
+
+// 构建ODS_MB_RQ
+CREATE OR REPLACE TASK BUILD_ODS_MB_RQ
+WAREHOUSE=SF_TUTS_WH
+SCHEDULE= '1440 minute'
+AS
+BEGIN
+TRUNCATE ODS_MB_RQ;
+INSERT INTO ODS_MB_RQ( select MONTH,YEAR,QUARTER,WEEKDAY_NUMBER,DAY_OF_MONTH,IS_WEEKDAY,IS_WEEKEND,MONTH_NAME,WEEK_OF_YEAR,WEEKDAY_NAME,DAY_OF_YEAR FLOAT,DAY DATE,TEXT_DAY,YEAR_MONTH,MONTH_WORKDAYS,WEEK_OF_MONTH,IS_MONTHLASTDAY from SF_TUTS.PUBLIC.BI_MB_RQ );
+END
+
+// 构建ODS_MB_YWFW
+CREATE OR REPLACE TASK BUILD_ODS_MB_YWFW
+WAREHOUSE=SF_TUTS_WH
+SCHEDULE= '1440 minute'
+AS
+BEGIN
+TRUNCATE ODS_MB_YWFW;
+INSERT INTO ODS_MB_YWFW( select BBQZDM,BBQZMC,SYBBDM,SYBBMC,SYBDM,SYBMC,YWFWDM,YWFWMC,CPZDM,YWKMC,JTMC,JTFL,DKMLL,YWFWQC,YWFL,ZLBBMC,YWFLDM,BUMC,BUDM,SBUMC,SBUDM,FLAG,BGMC,BGDM,YWKDM,JTFLN from SF_TUTS.PUBLIC.BI_MB_YWFW );
+END
+```
+
+
+
+### DWD、DIM层构建
+
+根据文档数据流程，可以看出这是为了指定业务诞生的数据集市，可以在DWD层以及DIM层做一定的数据过滤，
+
+**前置条件：根据设计文档中提供的SQL创建DWD、DIM实体表**
+
+```sql
+//  编写第一个DIM层的维度表（DIM_DATE），由于维度表属于维度信息，更新幅度较小，所以可以设置长时间的间隔拉取时间（在ODS拉取之后的间隔），并且过滤一些无用的维度信息
+CREATE OR REPLACE TASK BUILD_DIM_DATE
+WAREHOUSE=SF_TUTS_WH
+SCHEDULE= '1445 minute'
+AS
+BEGIN 
+TRUNCATE DIM_DATE;
+INSERT INTO DIM_DATE( select month,year,weekday_number,day_of_month,weekday_name,day,text_day,year_month,week_of_month,is_monthlastday from ODS_MB_RQ );
+END
+
+// 构建DIM_BUSINESS_UNIT(即事业部信息)
+CREATE OR REPLACE TASK BUILD_DIM_BUSINESS_UNIT
+WAREHOUSE=SF_TUTS_WH
+SCHEDULE= '1445 minute'
+AS
+BEGIN
+TRUNCATE DIM_BUSINESS_UNIT;
+INSERT INTO DIM_BUSINESS_UNIT(unit_code,unit_name) select SYBDM ,SYBMC from ODS_MB_YWFW WHERE SYBDM is not null GROUP BY SYBDM,SYBMC;
+END
+
+// 构建dim_bg（BG信息）
+CREATE OR REPLACE TASK BUILD_DIM_BG
+WAREHOUSE=SF_TUTS_WH
+SCHEDULE= '1445 minute'
+AS
+BEGIN
+TRUNCATE DIM_BG;
+INSERT INTO DIM_BG(bg_code,bg_name) select BGDM ,BGMC from ODS_MB_YWFW WHERE BGDM is not null GROUP BY BGDM,BGMC;
+END
+
+// 构建DIM_BUSINESS_SCOPE（即业务范围）
+CREATE OR REPLACE TASK BUILD_DIM_BUSINESS_SCOPE
+WAREHOUSE=SF_TUTS_WH
+SCHEDULE= '1445 minute'
+AS
+BEGIN
+TRUNCATE DIM_BUSINESS_SCOPE;
+INSERT INTO DIM_BUSINESS_SCOPE(scope_code,scope_name ) select YWFWDM ,YWFWMC from ODS_MB_YWFW WHERE YWFWDM is not null GROUP BY YWFWDM,YWFWMC;
+END
+
+// 构建DIM_BU(BU信息)
+CREATE OR REPLACE TASK BUILD_DIM_BU
+WAREHOUSE=SF_TUTS_WH
+SCHEDULE= '1445 minute'
+AS
+BEGIN
+TRUNCATE DIM_BU;
+INSERT INTO DIM_BU(bu_code,bu_name ) select BUDM ,BUMC from ODS_MB_YWFW WHERE BUDM is not null GROUP BY BUDM,BUMC;
+END
+
+// 构建DIM_BRAND(中文品牌)
+CREATE OR REPLACE TASK BUILD_DIM_BRAND
+WAREHOUSE=SF_TUTS_WH
+SCHEDULE= '1445 minute'
+AS
+BEGIN
+TRUNCATE DIM_BRAND;
+INSERT INTO DIM_BRAND(brand_name) select distinct zwpp from ODS_AEG_WLCGRK WHERE zwpp is not null GROUP BY zwpp;
+END
+
+// 构建DWD_PURCHASE（采购信息）
+CREATE OR REPLACE TASK BUILD_DWD_PURCHASE
+WAREHOUSE=SF_TUTS_WH
+SCHEDULE= '65 minute'
+AS
+BEGIN
+TRUNCATE DWD_PURCHASE;
+INSERT INTO DWD_PURCHASE(order_no,amount,material_code,factory_code,store_place_code,producer_code,day,bg_code,bu_code,unit_code,scope_code,brand_name,status) select CGDDDM, BWBJE,WLDM,GCDM,KCDDM,PZCJRQ,day,bgdm,budm,sybdm,oaw.YWFWDM,ZWPP,ZT from ODS_AEG_WLCGRK oaw JOIN ODS_MB_RQ omr ON omr.text_day = oaw.pzcjrq JOIN ODS_MB_YWFW omy ON omy.ywfwdm = oaw.ywfwdm;
+END
+```
+
+
+
+### 构建DWS层
+
+```sql
+// 构建每日的相同部门下同一品牌的收入合计（DWS_ORUCHASE_DAILY）
+CREATE OR REPLACE TASK BUILD_DWS_PURCHASE_DAILY
+WAREHOUSE=SF_TUTS_WH
+SCHEDULE= '70 minute'
+AS
+BEGIN
+TRUNCATE DWS_PURCHASE_DAILY;
+INSERT INTO DWS_PURCHASE_DAILY(brand_name,day,amount,bg_code,bu_code,unit_code,scope_code) select brand_name,day,sum(amount) as amount,bg_code,bu_code,unit_code,scope_code from DWD_PURCHASE GROUP BY brand_name,day,scope_code,bg_code,bu_code,unit_code order by brand_name,day;
+END
+
+// 构建每周的相同部门下同一品牌的收入合计（DWS_ORUCHASE_weekly）
+CREATE OR REPLACE TASK BUILD_DWS_PURCHASE_WEEKLY
+WAREHOUSE=SF_TUTS_WH
+SCHEDULE= '75 minute'
+AS
+BEGIN
+TRUNCATE DWS_PURCHASE_WEEKLY;
+INSERT INTO DWS_PURCHASE_WEEKLY(brand_name,year,month,week_of_month,amount,bg_code,bu_code,unit_code,scope_code) select brand_name,omr.year,omr.month,omr.week_of_month,sum(amount) as amount,bg_code,bu_code,unit_code,scope_code from DWS_PURCHASE_DAILY dpd JOIN ODS_MB_RQ omr ON omr.day = dpd.day GROUP BY brand_name,omr.year,omr.month,omr.week_of_month,scope_code,bg_code,bu_code,unit_code order by brand_name,omr.year,omr.month,omr.week_of_month;
+END
+
+// 构建每个月的相同部门下同一品牌的收入合计（DWS_ORUCHASE_weekly）
+CREATE OR REPLACE TASK BUILD_DWS_PURCHASE_MONTHLY
+WAREHOUSE=SF_TUTS_WH
+SCHEDULE= '80 minute'
+AS
+BEGIN
+TRUNCATE DWS_PURCHASE_MONTHLY;
+INSERT INTO DWS_PURCHASE_MONTHLY(brand_name,year,month,amount,bg_code,bu_code,unit_code,scope_code) select brand_name,year,month,sum(amount) as amount,bg_code,bu_code,unit_code,scope_code from DWS_PURCHASE_WEEKLY  GROUP BY brand_name,year,month,scope_code,bg_code,bu_code,unit_code order by brand_name,year,month;
+END
+
+// 构建每天的相同部门下同一品牌的未清量（DWS_UCLEAR_DAILY）
+CREATE OR REPLACE TASK BUILD_DWS_UCLEAR_DAILY
+WAREHOUSE=SF_TUTS_WH
+SCHEDULE= '60 minute'
+AS
+BEGIN
+TRUNCATE DWS_UCLEAR_DAILY;
+INSERT INTO DWS_UCLEAR_DAILY(brand_name,day,amount,bg_code,bu_code,unit_code,scope_code) select brand_name,day,sum(amount) as amount,bg_code,bu_code,unit_code,scope_code from DWD_PURCHASE WHERE status = '未清' GROUP BY brand_name,day,scope_code,bg_code,bu_code,unit_code order by brand_name,day;
+END
+
+// 构建每周的相同部门下同一品牌的未清量（DWS_UCLEAR_WEEKLY）
+CREATE OR REPLACE TASK BUILD_DWS_UNCLEAR_WEEKLY
+WAREHOUSE=SF_TUTS_WH
+SCHEDULE= '65 minute'
+AS
+BEGIN
+TRUNCATE DWS_UNCLEAR_WEEKLY;
+INSERT INTO DWS_UNCLEAR_WEEKLY(brand_name,year,month,day,week_of_month,amount,bg_code,bu_code,unit_code,scope_code) select brand_name,omr.year,omr.month,max(dud.day),omr.week_of_month,sum(amount) as amount,bg_code,bu_code,unit_code,scope_code from dws_uclear_daily dud JOIN ODS_MB_RQ omr ON omr.day = dud.day GROUP BY brand_name,omr.year,omr.month,omr.week_of_month,scope_code,bg_code,bu_code,unit_code order by brand_name,omr.year,omr.month,omr.week_of_month;
+END
+
+// 构建每月的相同部门下同一品牌的未清量（DWS_UCLEAR_MONTHLY）
+CREATE OR REPLACE TASK BUILD_DWS_UNCLEAR_MONTHLY
+WAREHOUSE=SF_TUTS_WH
+SCHEDULE= '70 minute'
+AS
+BEGIN
+TRUNCATE DWS_UNCLEAR_MONTHLY;
+INSERT INTO DWS_UNCLEAR_MONTHLY(brand_name,year,month,day,amount,bg_code,bu_code,unit_code,scope_code) select brand_name,year,month,max(day),sum(amount) as amount,bg_code,bu_code,unit_code,scope_code from DWS_UNCLEAR_WEEKLY  GROUP BY brand_name,year,month,scope_code,bg_code,bu_code,unit_code order by brand_name,year,month;
+END
+
+```
+
+
+
+### 构建DWT层
+
